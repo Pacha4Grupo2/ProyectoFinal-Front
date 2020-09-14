@@ -1,0 +1,25 @@
+/*DISPLAY*/
+.d-flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.flex-column-reverse{
+  flex-direction: column-reverse;
+}
+
