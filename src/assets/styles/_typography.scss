@@ -1,21 +1,11 @@
 /*COLOR*/
-$color: (
-  primary: #000425,
-  secondary: #f8f8fa,
-  tertiary: #222222,
-  cuaternary: #5640ff,
-);
+
+$color: ( primary: #000425, secondary: #f8f8fa, tertiary: #222222, cuaternary: #5640ff, );
 
 /*FUENTE*/
-$f-family: (
-  primary: 'Poppins', sans-serif,
-  secondary: 'Roboto', sans-serif,
-);
+
+$f-family: ( primary: 'Poppins', secondary: 'Roboto', );
 
 /*BREAKPOINTS*/
-$breakpoints: (
-  lg: 1100px,
-  md: 1050px,
-  sm: 530px,
-  xs: 480px,
-);
+
+$breakpoints: ( lg: 1100px, md: 1050px, sm: 530px, xs: 480px, );

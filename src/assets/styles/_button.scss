@@ -1,13 +1,11 @@
-.button{
-  /*Box-model*/
-  padding: 20px 120px;
-  border-radius: 10px;
-  cursor: pointer;
-
-  /*Tipografía*/
-  background-color: map-get($color, cuaternary);
-  font-family: map-get($f-family, secondary);
-  color: map-get($color, secondary);
-
+@import 'typography';
+.button {
+    /*Box-model*/
+    padding: 20px 120px;
+    border-radius: 10px;
+    cursor: pointer;
+    /*Tipografía*/
+    background-color: map-get($color, cuaternary);
+    font-family: map-get($f-family, secondary);
+    color: map-get($color, secondary);
 }
-
