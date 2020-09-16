@@ -1,6 +1,6 @@
 <template>
   <div class="auth-login">
-    <h2>PAGINA LOGIN</h2>
+    <!-- <h2>PAGINA LOGIN</h2> -->
   </div>
 </template>
 

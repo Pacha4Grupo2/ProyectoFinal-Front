@@ -1,6 +1,6 @@
 <template>
   <div class="auth-register">
-    <h2>PAGINA REGISTER</h2>
+    <!-- <h2>PAGINA REGISTER</h2> -->
   </div>
 </template>
 
