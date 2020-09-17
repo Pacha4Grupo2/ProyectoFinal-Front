@@ -1,10 +1,10 @@
 <template>
 	<div class="container-comunity">
-		<div class="container-comunity__banner">
+		<div class="container-comunity__banner" id="container-comunity__banner">
 			<figure class="container-comunity__img">
 				<img src="@/assets/images/women_laptop.png" alt="chica con laptop" />
 			</figure>
-			<div class="container-comunity__detail">
+			<div class="container-comunity__detail" id="comunity_detail">
 				<h2 class="container-comunity__detail-title">
 					Sé parte de la comunidad
 				</h2>
@@ -28,34 +28,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.container-comunity {
-	margin-top: 130px;
-	&__banner {
-		background: #3015fd;
-		display: flex;
-		align-items: center;
-		height: 300px;
-		padding: 0 9%;
-		.container-comunity__img {
-			height: 400px;
-			margin-right: 20px;
-			img {
-				height: 100%;
-			}
-		}
-		.container-comunity__detail {
-			color: white;
-			width: 40%;
-			&-title {
-				font-size: 2.8rem;
-				margin-bottom: 40px;
-			}
-			&-p {
-				font-size: 1.5rem;
-				margin-bottom: 25px;
-			}
-		}
-	}
-}
-</style>
+<style lang="scss"></style>

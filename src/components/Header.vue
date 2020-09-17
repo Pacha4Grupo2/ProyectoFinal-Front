@@ -138,26 +138,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.header {
-	position: fixed;
-	background-color: transparent;
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	transition: all 0.15s ease-out 0s;
-	z-index: 1;
-	.container-header__menu {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		width: 1366px;
-		height: 61px;
-	}
-}
-
-.header-color {
-	background-color: #000425;
-	transition: all 0.15s ease-out 0s;
-}
-</style>
+<style lang="scss"></style>

@@ -8,7 +8,7 @@
 				<h1 class="h1" id="h1">
 					¡Explota todo tu potencial tecnológico!
 				</h1>
-				<p class="p">Con nuestros programas de especialización</p>
+				<p class="p" id="p">Con nuestros programas de especialización</p>
 			</div>
 		</div>
 		<div class="respaldo">
@@ -135,54 +135,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@import '@/assets/styles/main.scss';
-
-.container-landing {
-	width: 100%;
-	.container-landing__detail {
-		position: relative;
-		width: 100%;
-		.container-img__landing {
-			.landing {
-				width: 100%;
-				height: 420px;
-			}
-		}
-		.landing-text {
-			position: absolute;
-			left: 18.5%;
-			top: 35%;
-			color: white;
-			width: 50%;
-			line-height: 1.5;
-			font-family: map-get($f-family, primary);
-			#h1 {
-				font-size: 5.4rem;
-				font-weight: bold;
-				margin-bottom: 40px;
-				letter-spacing: 2px;
-			}
-			.p {
-				font-size: 2rem;
-			}
-		}
-	}
-	.respaldo {
-		width: 1200px;
-		margin: 50px auto;
-		small {
-			padding-left: 1.8%;
-			font-size: 1.4rem;
-		}
-		.container-img__respaldo {
-			display: flex;
-			align-items: center;
-			height: 54px;
-			.SVG {
-				margin: 20px;
-			}
-		}
-	}
-}
-</style>
+<style lang="scss"></style>
