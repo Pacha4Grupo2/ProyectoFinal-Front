@@ -1,0 +1,16 @@
+.header {
+    position: fixed;
+    background-color: #000425;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    transition: all 0.15s ease-out 0s;
+    z-index: 1;
+    .container-header__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 71.7%;
+        height: 61px;
+    }
+}
