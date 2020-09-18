@@ -4,6 +4,8 @@
 		<CardCourse />
 		<Comunity />
 		<Beneficios />
+		<FormHome />
+		<Footer />
 	</div>
 </template>
 
@@ -12,6 +14,8 @@ import CardCourse from './components/CardCourse';
 import LandingPage from '@/components/LandingPage';
 import Comunity from '@/components/Comunity';
 import Beneficios from '@/components/Beneficios';
+import FormHome from '@/views/Home/components/FormHome';
+import Footer from '@/components/Footer';
 
 export default {
 	name: 'Home',
@@ -20,6 +24,8 @@ export default {
 		LandingPage,
 		Comunity,
 		Beneficios,
+		FormHome,
+		Footer,
 	},
 	data() {
 		return {

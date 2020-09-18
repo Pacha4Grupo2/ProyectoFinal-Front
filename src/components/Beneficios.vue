@@ -73,32 +73,30 @@ export default {
 <style lang="scss">
 .beneficios {
 	width: 100%;
-	height: 400px;
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: flex;
+	justify-content: center;
 	.container-beneficios {
-		width: 1200px;
-		margin: 0 auto;
+		width: 40%;
 		display: flex;
-		align-items: flex-start;
 		flex-direction: column;
-		justify-content: center;
-		height: 100%;
+		margin-right: 25%;
 		h2 {
 			font-size: 2.8rem;
 			color: #000425;
 			font-weight: bold;
+			text-align: left;
 		}
 		.container-beneficios__description {
 			display: flex;
 			align-items: center;
-			height: 800px;
 			background-color: #f2f3f5;
 			padding: 15px;
 			margin-top: 25px;
-			width: 60%;
+			width: 100%;
 			svg {
-				width: 16%;
+				width: 150px;
 				margin: 20px;
 			}
 			&-detail {
@@ -111,6 +109,120 @@ export default {
 					font-size: 1.5rem;
 					font-weight: 400;
 					line-height: 1.5;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1679px) {
+	.beneficios {
+		.container-beneficios {
+			width: 50%;
+			margin-right: 15%;
+			h2 {
+				font-size: 1.8rem;
+				color: #000425;
+				font-weight: bold;
+			}
+			.container-beneficios__description {
+				display: flex;
+				align-items: center;
+				background-color: #f2f3f5;
+				padding: 15px;
+				margin-top: 25px;
+				width: 100%;
+				svg {
+					width: 150px;
+					margin: 20px;
+				}
+				&-detail {
+					&__title {
+						font-size: 1.5rem;
+						font-weight: 500;
+						margin-bottom: 15px;
+					}
+					&__p {
+						font-size: 1.2rem;
+						font-weight: 400;
+						line-height: 1.5;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1062px) {
+	.beneficios {
+		.container-beneficios {
+			width: 60%;
+			margin-right: 5%;
+			h2 {
+				font-size: 1.8rem;
+				color: #000425;
+				font-weight: bold;
+			}
+			.container-beneficios__description {
+				display: flex;
+				align-items: center;
+				background-color: #f2f3f5;
+				padding: 15px;
+				margin-top: 25px;
+				width: 100%;
+				svg {
+					width: 150px;
+					margin: 20px;
+				}
+				&-detail {
+					&__title {
+						font-size: 1.5rem;
+						font-weight: 500;
+						margin-bottom: 15px;
+					}
+					&__p {
+						font-size: 1.2rem;
+						font-weight: 400;
+						line-height: 1.5;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 448px) {
+	.beneficios {
+		.container-beneficios {
+			width: 60%;
+			margin-right: 5%;
+			h2 {
+				font-size: 1.8rem;
+				color: #000425;
+				font-weight: bold;
+			}
+			.container-beneficios__description {
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				background-color: #f2f3f5;
+				padding: 15px;
+				margin-top: 25px;
+				width: 100%;
+				svg {
+					width: 150px;
+					margin: 20px;
+				}
+				&-detail {
+					&__title {
+						font-size: 1.5rem;
+						font-weight: 500;
+						margin-bottom: 15px;
+					}
+					&__p {
+						font-size: 1.2rem;
+						font-weight: 400;
+						line-height: 1.5;
+					}
 				}
 			}
 		}
