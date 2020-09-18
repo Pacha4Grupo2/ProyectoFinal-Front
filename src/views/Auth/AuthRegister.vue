@@ -1,6 +1,6 @@
 <template>
   <div class="formRegister-content">
-    <SocialMediaDiv description1="resgistrarte" description2="registrarte" />
+    <SocialMediaDiv description1="registrarte" description2="registrarte" />
     <form action="#">
       <div>
         <input type="text" placeholder="Nombre y Apellidos" required />
@@ -38,7 +38,7 @@ export default {
 }
 
 .formRegister-content {
-  height: 90%;
+  height: 89%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
