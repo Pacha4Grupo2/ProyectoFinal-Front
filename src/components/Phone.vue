@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/ProyectoFinal-Front/src/assets/styles/main.css">
-    <title>Phone</title>
-</head>
-<body>
-    <div>
+<template>
+     <div>
     <div class="contact-form-wrapper">
         <div class="contact-form-phone">
             <div class="contact-form-container-phone">
@@ -46,6 +38,14 @@
             </div>
         </div>
     </div>
-</div>
-</body>
-</html>
+</template>
+
+<script>
+export default {
+    name: "Phone"
+}
+</script>
+
+<style>
+@import "@/src/assets/styles/phone.scss";
+</style>

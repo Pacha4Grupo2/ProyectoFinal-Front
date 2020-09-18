@@ -285,4 +285,114 @@ h3 {
   width: 225px;
   font-weight: bold;
 }
+
+.modalWrapper {
+  position: fixed;
+  top: 60px;
+  right: 0px;
+  z-index: 10000;
+  background: #000425;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.itemModal {
+  width: 100%;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.listItem {
+  font-size: 28px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.modalButton {
+  font-size: 28px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: #ff1558;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  height: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.modalButton:hover {
+  background-color: white;
+  color: #5640FF;
+}
+
+.support {
+  font-size: 11px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+.logosWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 0px;
+}
+
+.firstItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  cursor: pointer;
+}
+
+.secondItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  cursor: pointer;
+  padding: 0px 30px;
+}
+
+.SVGFooterOne {
+  fill: white;
+  vertical-align: middle;
+  margin: 0px;
+}
 /*# sourceMappingURL=main.css.map */
