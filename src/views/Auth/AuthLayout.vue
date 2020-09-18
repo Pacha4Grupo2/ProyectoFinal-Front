@@ -26,17 +26,7 @@
           <button class="tab button">Registrarse</button>
         </router-link>
       </div>
-      <div class="form-div">
-        <p>Puedes iniciar sesión con:</p>
-        <button class="social-icon iconfb">
-          <i class="fab fa-facebook-f"></i>
-        </button>
-        <button class="social-icon">
-         <i class="fab fa-linkedin-in"></i>
-        </button>
-        <p>También puedes iniciar sesión con tu correo</p>
-      </div>
-      <router-view></router-view>
+        <router-view></router-view>
     </div>
    </div>
 </template>
@@ -44,7 +34,7 @@
 <script>
 export default {
   name: "AuthLayout",
-};
+ };
 </script>
 
 <style lang="scss" scoped>
@@ -88,7 +78,7 @@ li {
   width: 100%;
   height: 72%;
   justify-content: center;
-  
+
   p {
     padding: 10px;
     width: 260px;
@@ -106,9 +96,9 @@ li {
 
 .container-form {
   width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
   background: #f8f8fa;
 }
 
@@ -121,41 +111,17 @@ li {
   font-size: 1.5rem;
   font-weight: bold;
   outline: none;
+  border-radius:0px;
+}
+
+.tab:focus {
+  border-bottom: 3px solid #000;
 }
 
 .tab-component {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #bfbfbf;
-}
-
-//iconos Fb y linkedin
-.form-div {
-  text-align: center;
-  padding: 20px;
-
-  p {
-    color: #000;
-    // padding-bottom: 20px;
-    font-size: 1.4rem;
-  }
-}
-
-.social-icon {
-  padding: 12px;
-  margin: 10px;
-  // margin-bottom: 20px;
-  // margin-left: 20px;
-  color: #bfbfbf;
-  border-radius: 5px;
-  background: none;
-  border: 1px solid;
-  cursor: pointer;
-  outline: none;
-}
-
-.iconfb {
-  padding: 12px 14px;
 }
 
 </style>

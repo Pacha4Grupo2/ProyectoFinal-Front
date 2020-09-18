@@ -1,24 +1,29 @@
 <template>
-  <form action="#">
-    <div>
-      <input type="text" placeholder="Nombre y Apellidos" required />
-      <input type="email" placeholder="Correo electrónico" required />
-      <input type="password" placeholder="Contraseña" required />
-      <input type="password" placeholder="Repite contraseña" required />
-      <div class="checkbox-container">
-        <input class="checkbox" type="checkbox" name="accept" required />
-        <label>Acepto Términos y condiciones</label>
+  <div class="formRegister-content">
+    <SocialMediaDiv description1="resgistrarte" description2="registrarte" />
+    <form action="#">
+      <div>
+        <input type="text" placeholder="Nombre y Apellidos" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <input type="password" placeholder="Contraseña" required />
+        <input type="password" placeholder="Repite contraseña" required />
+        <div class="checkbox-container">
+          <input class="checkbox" type="checkbox" name="accept" required />
+          <label>Acepto Términos y condiciones</label>
+        </div>
       </div>
-    </div>
-    <!-- <div class="enter"> -->
-    <button class="button">Ingresar</button>
-    <!-- </div> -->
-  </form>
+      <button class="button">Registrarse</button>
+    </form>
+  </div>
 </template>
 
 <script>
+import SocialMediaDiv from "./components/SocialMediaDiv";
 export default {
   name: "AuthRegister",
+  components: {
+    SocialMediaDiv,
+  },
 };
 </script>
 
@@ -29,12 +34,19 @@ export default {
   font-weight: bold;
   font-size: 1.5rem;
   outline: none;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
+}
+
+.formRegister-content {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 form {
   padding: 20px;
-  height: 60%;
+  height: 65%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -64,10 +76,4 @@ input {
   cursor: pointer;
 }
 
-.enter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
 </style>
