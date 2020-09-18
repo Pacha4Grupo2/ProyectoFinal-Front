@@ -1,6 +1,6 @@
 <template>
 	<div class="app">
-		<ul>
+		<!-- <ul>
 			<li>
 				<router-link to="/auth/login">LOGIN</router-link>
 			</li>
@@ -32,13 +32,17 @@
 			<li>
 				<router-link to="/pago/resumen">PAGO / COMPRA RESUMEN</router-link>
 			</li>
-		</ul>
-		<router-view></router-view>
+		</ul> -->
+
+		<Phone/>		
 	</div>
 </template>
 <script>
+import Phone from "@/components/Phone";
+
 export default {
 	name: 'App',
+	components: { Phone}
 };
 </script>
 <style lang="scss">

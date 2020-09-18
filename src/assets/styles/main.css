@@ -149,7 +149,7 @@ h3 {
 }
 
 .contact-form-phone {
-  background-image: url(/ProyectoFinal-Front/src/assets/phone.png);
+  background-image: url("/ProyectoFinal-Front/src/assets/phone.png");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
