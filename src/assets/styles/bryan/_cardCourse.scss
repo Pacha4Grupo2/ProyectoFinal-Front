@@ -58,6 +58,35 @@
     }
 }
 
+@media only screen and (max-width: 1380px) {
+    .container-main {
+        .container-cursos {
+            .container-cursos__list {
+                width: 100%;
+                .curso {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .container-main {
+        .container-cursos {
+            .container-cursos__title {
+                font-size: 2.5rem;
+            }
+            .container-cursos__list {
+                width: 100%;
+                .curso {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 1247px) {
     .container-main {
         .container-cursos {

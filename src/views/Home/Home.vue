@@ -1,5 +1,6 @@
 <template>
 	<div class="view-home">
+		<Phone />
 		<LandingPage />
 		<CardCourse />
 		<Comunity />
@@ -10,6 +11,7 @@
 </template>
 
 <script>
+import Phone from './components/Phone';
 import CardCourse from './components/CardCourse';
 import LandingPage from '@/components/LandingPage';
 import Comunity from '@/components/Comunity';
@@ -21,6 +23,7 @@ export default {
 	name: 'Home',
 	components: {
 		CardCourse,
+		Phone,
 		LandingPage,
 		Comunity,
 		Beneficios,

@@ -72,7 +72,7 @@ export default {
 	}
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1150px) {
 	.container-form {
 		display: block;
 	}
