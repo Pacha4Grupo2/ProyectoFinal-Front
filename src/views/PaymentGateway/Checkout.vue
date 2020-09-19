@@ -19,14 +19,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  h2 {
+  .view-checkout h2 {
     /*Tipografía*/
     font-family: 'Poppins';
     color: #000425;
     font-size: 1.9rem;
   }
 
-  button{
+  .view-checkout button{
     /*Box-model*/
     padding: 15px 120px;  
     margin-right: 5px;
@@ -37,12 +37,14 @@ export default {
 
   .checkout{
     padding: 20 20 20 20;
+
   }
   .sectionprice1{
-    padding: 50px 30px 0 30px;
+    padding: 50px 30px 50px 30px;
     max-width: 70%;
+    border: solid 1px rgb(86, 88, 86);
   }
-  h4{
+  .view-checkout h4{
     margin-bottom: 25px;
     font-size: 1.6rem;
   }

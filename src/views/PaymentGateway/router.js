@@ -1,50 +1,50 @@
 export default {
-    path: "/pago",
-    name: "pago",
+    path: '/pago',
+    name: 'pago',
     component: () =>
-        import ("./PaymentGatewayLayout.vue"),
+        import ('./PaymentGatewayLayout.vue'),
     children: [{
-            path: "checkout",
-            name: "checkout",
+            path: 'checkout',
+            name: 'checkout',
             component: () =>
-                import ("./Checkout.vue"),
+                import ('./Checkout.vue'),
         },
         {
-            path: "pasarela",
-            name: "pasarela",
+            path: 'pasarela',
+            name: 'pasarela',
             component: () =>
-                import ("./Pasarela.vue"),
+                import ('./Pasarela.vue'),
             children: [{
-                    path: "tarjeta-de-credito",
-                    name: "pago-credito",
+                    path: 'tarjeta-de-credito',
+                    name: 'pago-credito',
                     component: () =>
-                        import ("./CreditCard.vue"),
+                        import ('./CreditCard.vue'),
                 },
                 {
-                    path: "tarjeta-de-debito",
-                    name: "pago-debito",
+                    path: 'tarjeta-de-debito',
+                    name: 'pago-debito',
                     component: () =>
-                        import ("./DebitCard.vue"),
+                        import ('./DebitCard.vue'),
                 },
                 {
-                    path: "efectivo",
-                    name: "pago-efectivo",
+                    path: 'efectivo',
+                    name: 'pago-efectivo',
                     component: () =>
-                        import ("./CashPayment.vue"),
+                        import ('./CashPayment.vue'),
                 },
             ],
         },
         {
-            path: "resumen",
-            name: "pago-resumen",
+            path: 'resumen',
+            name: 'pago-resumen',
             component: () =>
-                import ("./PaymentSummary.vue"),
+                import ('./PaymentSummary.vue'),
         },
         {
-            path: "carrito-de-compras",
-            name: "resumen-carrito-de-compras",
+            path: 'carrito-de-compras',
+            name: 'resumen-carrito-de-compras',
             component: () =>
-                import ("./ShoppingCart.vue"),
+                import ('./ShoppingCartMain.vue'),
         },
     ],
 };
