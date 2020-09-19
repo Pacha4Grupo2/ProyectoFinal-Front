@@ -79,6 +79,11 @@
 			</div>
 			<div class="containerLink">
 				<router-link to="/auth/login"><p>Login</p></router-link>
+				<router-link to="/pago/resumen"><p>Resumen</p></router-link>
+				<router-link to="/pago/carrito-de-compras"
+					><p>Carrito de compras</p></router-link
+				>
+				<router-link to="/pago/pasarela"><p>Pasarela</p></router-link>
 			</div>
 			<div class="container-header_modal-header">
 				<div class="TypesOfFlex__ContainerIcon-rpidrp-0 iXEhxN">
@@ -125,7 +130,7 @@ export default {
 	},
 	computed: {},
 	methods: {
-		scrollProbando: function(e) {
+		scrollProbando: function (e) {
 			this.altura = e.path[1].scrollY;
 			if (e.path[1].scrollY > 2) {
 				this.backColor = true;
@@ -134,20 +139,21 @@ export default {
 			}
 		},
 	},
-	created: function() {
+	created: function () {
 		window.addEventListener('scroll', this.scrollProbando);
 	},
-	destroyed: function() {
+	destroyed: function () {
 		window.removeEventListener('scroll', this.scrollProbando);
 	},
 };
 </script>
 
-<<<<<<< HEAD
 <style lang="scss" scoped>
 .containerLink {
+	display: flex;
 	a {
 		text-decoration-line: none;
+		margin-right: 10px;
 		p {
 			color: white;
 			font-size: 2.4rem;
@@ -155,6 +161,3 @@ export default {
 	}
 }
 </style>
-=======
-<style lang="scss"></style>
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
