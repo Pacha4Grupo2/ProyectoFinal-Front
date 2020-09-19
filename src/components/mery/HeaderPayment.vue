@@ -1,6 +1,6 @@
 <template>
-	<div class="header">
-		<div class="container-header__menu">
+	<div class="headerMery">
+		<div class="container-header__menu--mery">
 			<div class="container-header_imgPachaqtec">
 				<router-link to="/">
 					<svg
