@@ -61,7 +61,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  h2 {
+.view-credit-card h2 {
     /* Box-model */
     margin-bottom: 15px;
     margin-right: 20px;
@@ -72,10 +72,10 @@ export default {
     font-weight: bold;
     
   }
-  section{
+.view-credit-card section{
     margin-bottom: 15px;
   }
-  input {
+.view-credit-card input {
     /* Box-model */
     padding: 10px 10px;
     border-radius: 4px;
@@ -89,11 +89,11 @@ export default {
     font-weight: bold;
   }
 
-  button{
+.view-credit-card button{
     width: 97%;
     padding: 15px 0;
   }
-  p,
+.view-credit-card p,
   .card-container-number input{
     color: red;
     font-weight: bold;

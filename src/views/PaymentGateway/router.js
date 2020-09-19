@@ -38,7 +38,7 @@ export default {
     {
       path: "carrito-de-compras",
       name: "resumen-carrito-de-compras",
-      component: () => import("./ShoppingCart.vue"),
+      component: () => import("./ShoppingCartMain.vue"),
     },
   ],
 };

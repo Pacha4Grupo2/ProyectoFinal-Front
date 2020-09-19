@@ -50,10 +50,10 @@
       </section> 
 
       <section>
-        <article class="total">
+        <div class="totalprice">
           <h3>Precio Final</h3>
           <h3 style="text-align:end">s/600.00</h3>
-        </article>   
+        </div>   
       </section>
     </div>
     <div>
@@ -73,7 +73,7 @@ export default {
 </script>
 
 <style>
-  h1 {
+  .view-summary h1 {
     /* Box-model */
     margin-bottom: 15px;
     margin-left: 20px;
@@ -82,7 +82,7 @@ export default {
     color: #000425;
     font-size: 1.6rem;
   }
-  h2 {
+  .view-summary h2 {
     /* Box-model */
     margin-bottom: 15px;
     /*Tipografía*/
@@ -91,7 +91,7 @@ export default {
     font-size: 1.3rem;
     font-weight: bold;
   }
-  h3 {
+  .view-summary h3 {
     /* Box-model */
     margin-bottom: 15px;
     /*Tipografía*/
@@ -100,25 +100,25 @@ export default {
     font-size: 1.5rem;
     font-weight: bold;
   }
-  section{
+  .view-summary section{
     margin-bottom: 15px;
   }  
-  article{
+  .view-summary article{
     display: grid;
     grid-template-columns: 0.45fr 2.5fr 0.5fr;
     grid-column-gap: 15px;
   }
-  img{
+  .view-summary img{
     height: 110px;
     object-fit: cover;
     border-radius: 7px;
   }
-  p{
+  .view-summary p{
     color: #5640ff;
     font-weight: bold;
     font-size: 1.1rem;
   }
-  .total {
+  .totalprice {
     display: grid;
     grid-template-columns: 2.2fr 1fr;    
   }
@@ -128,7 +128,7 @@ export default {
     font-size: 1.6rem;
   }
   .view-summary{
-    padding: 100px 60px 0 60px;
+    padding: 100px 60px 0 80px;
 
   }
 

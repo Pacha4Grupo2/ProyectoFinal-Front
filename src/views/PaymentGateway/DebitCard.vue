@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  h2 {
+.view-debit-card h2 {
     /* Box-model */
     margin-bottom: 15px;
     margin-right: 20px;
@@ -57,10 +57,10 @@ export default {
     font-weight: bold;
     
   }
-  section{
+.view-debit-card  section{
     margin-bottom: 15px;
   }
-  input {
+.view-debit-card  input {
     /* Box-model */
     padding: 10px 10px;
     border-radius: 4px;
@@ -74,11 +74,11 @@ export default {
     font-weight: bold;
   }
 
-  button{
+.view-debit-card  button{
     width: 97%;
     padding: 15px 0;
   }
-  p,
+.view-debit-card  p,
   .card-container-number input{
     color: red;
     font-weight: bold;

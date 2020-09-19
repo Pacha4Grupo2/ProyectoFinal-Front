@@ -29,7 +29,7 @@ export default {
 	name: 'HeaderPagos',
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .container-buttonPaymente {
 	margin-bottom: 20px;
 	h1 {

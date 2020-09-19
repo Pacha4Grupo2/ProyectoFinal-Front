@@ -59,7 +59,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    h2 {
+  .view-cash-payment h2 {
     /* Box-model */
     margin-bottom: 15px;
     margin-right: 20px;
@@ -74,7 +74,7 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr;    
   }
-  button{
+  .view-cash-payment button{
     width: 95%;
     padding: 15px 0;
   }
@@ -84,20 +84,20 @@ export default {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
   }
-  section{
+  .view-cash-payment section{
     margin-bottom: 20px;
   }  
-  img{
+  .view-cash-payment img{
     width: 80%;
     object-fit: cover;
     border-radius: 7px;
   }
   .img-main{
-    width: 30%;
+    max-width: 40%;
     object-fit: cover;
     border-radius: 7px;
   }
-  p{
+  .view-cash-payment p{
     font-family: 'roboto';
     color: #222222;
     font-size: 1.10rem;

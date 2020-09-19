@@ -17,11 +17,8 @@
 						<ShoppingCart />
 					</div>
 					
-					<div class="sectionprice d-flex flex-column">
-						<div>
-							<input type="text" placeholder="Agrega un código de descuento" />
-							<hr>
-						</div>
+					<div class="sectionprice">
+						<hr>
 						<div class="sectionprice1 d-flex justify-between">
 							<h3>Precio final</h3>
 							<h3>s/600.00</h3>
@@ -46,7 +43,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 .container-pasarela {
 	margin-left: 50px;
@@ -61,39 +58,18 @@ export default {
 .view-pasarela {
 	padding-top: 100px;
 }
-h1 {
+.container-pasarela h1 {
 	/* Box-model */
 	margin-left: 20px;
 	/*Tipografía*/
 	font-family: 'Poppins';
 	color: #000425;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 }
-h2 {
-	/* Box-model */
-	margin-bottom: 15px;
-	/*Tipografía*/
-	font-family: 'Poppins';
-	color: #222222;
-	font-size: 1.2rem;
-	font-weight: bold;
-}
+
 .button-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-}
-button {
-	/*Box-model*/
-	padding: 15px 80px;
-	margin-right: 5px;
-	background-color: rgb(223, 219, 219);
-	border: darkgrey;
-	color: rgb(109, 105, 105);
-	font-weight: bold;
-
-	&:hover {
-		background-color: #5640ff;
-	}
 }
 
 .active {
@@ -101,20 +77,16 @@ button {
 	color: white;
 }
 
-p {
-	color: red;
-}
-
 .container-headerpagos {
 	width: 50%;
 	margin: 0 20px;
 }
 .sectionprice h3{
-	font-size: 2.2rem;
+	font-size: 2.0rem;
 	color: #5640ff;
   font-weight: bold;
 }
-input{
+.sectionprice input{
 	/* Box-model */
 	width: 90%;
 	padding: 10px 10px;
@@ -128,11 +100,12 @@ input{
 	font-weight: bold;
 }
 .sectionprice1{
-	padding:0 50px 0 0;
+	padding:0px 50px 0 40px;
 	margin-top: 20px;
 }
 hr{
-	width: 100%;
+		color: rgb(109, 105, 105);
+    max-width: 88%;
 }
 
 </style>
