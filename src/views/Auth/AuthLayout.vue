@@ -34,7 +34,9 @@
 <script>
 export default {
   name: "AuthLayout",
- };
+  
+};
+ 
 </script>
 
 <style lang="scss" scoped>
@@ -114,7 +116,7 @@ li {
   border-radius:0px;
 }
 
-.tab:focus {
+.router-link-active .tab {
   border-bottom: 3px solid #000;
 }
 
