@@ -1,7 +1,6 @@
 <template>
 	<div class="view-shopping-cart">
 		<h2>VISTA CARRITO DE COMPRAS</h2>
-
 		<div>
 			<section class="d-flex">
 				<p>ÍCONO</p>
