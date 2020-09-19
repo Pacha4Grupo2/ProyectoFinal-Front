@@ -1,7 +1,5 @@
 <template>
 	<div class="app">
-<<<<<<< HEAD
-=======
 		<!-- <ul>
 			<li>
 				<router-link to="/auth/login">LOGIN</router-link>
@@ -38,7 +36,6 @@
 				<router-link to="/pago/resumen">PAGO / COMPRA RESUMEN</router-link>
 			</li>
 		</ul> -->
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
 		<router-view></router-view>
 	</div>
 </template>
@@ -49,11 +46,8 @@ export default {
 </script>
 <style lang="scss">
 @import '@/assets/styles/main.scss';
-<<<<<<< HEAD
 
 .app {
 	overflow: hidden;
 }
-=======
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
 </style>

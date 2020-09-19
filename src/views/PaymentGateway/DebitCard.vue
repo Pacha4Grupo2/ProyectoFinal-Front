@@ -1,11 +1,5 @@
 <template>
   <div class="view-debit-card">
-<<<<<<< HEAD
-      <h2>VISTA DEBIT CARD</h2>
-  </div>
-</template>
-
-=======
 
     <section>
       <h2>Datos personales</h2>      
@@ -45,16 +39,12 @@
             
   </div>
 </template>
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
 <script>
 export default {
   name: "DebitCard",
 };
 </script>
 
-<<<<<<< HEAD
-<style>
-=======
 <style lang="scss" scoped>
   h2 {
     /* Box-model */
@@ -126,5 +116,4 @@ export default {
     color: white; 
   }
 
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
 </style>

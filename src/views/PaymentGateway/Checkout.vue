@@ -1,8 +1,5 @@
 <template>
   <div class="view-checkout">
-<<<<<<< HEAD
-    <h2>VISTA CHECKOUT</h2>
-=======
 
     <div class="checkout">
       <div class="sectionprice1">
@@ -12,7 +9,6 @@
       </div>
     </div>
 
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
   </div>
 </template>
 
@@ -22,9 +18,6 @@ export default {
 };
 </script>
 
-<<<<<<< HEAD
-<style>
-=======
 <style lang="scss" scoped>
   h2 {
     /*Tipografía*/
@@ -54,5 +47,4 @@ export default {
     font-size: 1.6rem;
   }
 
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
 </style>

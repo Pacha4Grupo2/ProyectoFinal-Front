@@ -1,8 +1,5 @@
 <template>
   <div class="view-credit-card">
-<<<<<<< HEAD
-      <h2>VISTA CREDIT CARD</h2>
-=======
 
     <section>
       <h2>Datos personales</h2>      
@@ -54,7 +51,6 @@
       <button class="button">Finalizar compra</button>
     </section>
             
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
   </div>
 </template>
 
@@ -64,9 +60,6 @@ export default {
 };
 </script>
 
-<<<<<<< HEAD
-<style>
-=======
 <style lang="scss" scoped>
   h2 {
     /* Box-model */
@@ -139,5 +132,4 @@ export default {
     color: white; 
   }
 
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
 </style>

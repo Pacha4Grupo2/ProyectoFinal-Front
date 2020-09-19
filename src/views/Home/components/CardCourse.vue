@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
 	<div class="container-main">
 		<div class="container-cursos">
 			<h2 class="container-cursos__title">
@@ -83,26 +82,12 @@
 		<div class="container-comunidad"></div>
 		<div class="container-beneficios"></div>
 	</div>
-=======
-  <div class="card-course">
-    <h2>Card course</h2>
-  </div>
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
 </template>
 
 <script>
 export default {
-<<<<<<< HEAD
 	name: 'CardCourse',
 };
 </script>
 
 <style lang="scss"></style>
-=======
-  name: "CardCourse",
-};
-</script>
-
-<style>
-</style>
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d

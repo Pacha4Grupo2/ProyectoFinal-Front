@@ -1,8 +1,4 @@
 <template>
-<<<<<<< HEAD
-  <div class="view-summary">
-    <h2>VISTA SUMMARY PAGO</h2>
-=======
   <div class="view-summary d-flex justify-between">
     <div>
       <section class="d-flex">
@@ -63,28 +59,20 @@
     <div>
      <Checkout /> 
     </div>    
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
   </div>
 </template>
 
 <script>
-<<<<<<< HEAD
-export default {
-  name: "PaymentSummary",
-=======
 import Checkout from '@/views/PaymentGateway/Checkout';
 export default {
   name: "PaymentSummary",
   components: {
     Checkout,
   }
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
 };
 </script>
 
 <style>
-<<<<<<< HEAD
-=======
   h1 {
     /* Box-model */
     margin-bottom: 15px;
@@ -144,5 +132,4 @@ export default {
 
   }
 
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
 </style>

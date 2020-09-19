@@ -8,29 +8,19 @@ html {
 }
 
 h1 {
-<<<<<<< HEAD
-    /*Tipografía*/
-    font-family: map-get($f-family, primary);
-    color: map-get($color, secundary);
-=======
     /* Box-model */
     margin-bottom: 15px;
     /*Tipografía*/
     font-family: map-get($f-family, primary);
     color: map-get($color, secondary);
     font-size: 2.8rem;
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
     font-weight: bold;
 }
 
 h2 {
     /*Tipografía*/
     font-family: map-get($f-family, primary);
-<<<<<<< HEAD
     color: map-get($color, secundary);
-=======
-    color: map-get($color, secondary);
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
 }
 
 h3 {

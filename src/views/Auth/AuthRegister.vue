@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div class="formRegister-content">
     <SocialMediaDiv description1="registrarte" description2="registrarte" />
     <form action="#">
@@ -15,15 +14,10 @@
       </div>
       <button class="button">Registrarse</button>
     </form>
-=======
-  <div class="auth-register">
-    <h2>PAGINA REGISTER</h2>
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
   </div>
 </template>
 
 <script>
-<<<<<<< HEAD
 import SocialMediaDiv from "./components/SocialMediaDiv";
 export default {
   name: "AuthRegister",
@@ -82,12 +76,4 @@ input {
   cursor: pointer;
 }
 
-=======
-export default {
-  name: "AuthRegister",
-};
-</script>
-
-<style>
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
 </style>

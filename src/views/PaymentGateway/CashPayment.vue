@@ -1,8 +1,5 @@
 <template>
   <div class="view-cash-payment">
-<<<<<<< HEAD
-      <h2>VISTA CASH PAYMENT</h2>
-=======
 
     <section>
       <img class="img-main" src="https://theme.zdassets.com/theme_assets/170263/e4204de1b989fdda8148d185d396322b469b27f5.png">
@@ -52,7 +49,6 @@
       <div></div>
       <button class="button">Obtener código CIP</button>
     </section>      
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
   </div>
 </template>
 
@@ -62,9 +58,6 @@ export default {
 };
 </script>
 
-<<<<<<< HEAD
-<style>
-=======
 <style lang="scss" scoped>
     h2 {
     /* Box-model */
@@ -111,5 +104,4 @@ export default {
     margin-bottom: 15px;
     font-weight: bold;
   }
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
 </style>

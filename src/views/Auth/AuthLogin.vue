@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div class="formLogin-content">
     <SocialMediaDiv description1="iniciar sesión" description2="iniciar sesión"/>
     <form action="#">
@@ -12,15 +11,10 @@
         <a href>¿Olvidaste tu Contraseña?</a>
       </div>
     </form>
-=======
-  <div class="auth-login">
-    <h2>PAGINA LOGIN</h2>
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
   </div>
 </template>
 
 <script>
-<<<<<<< HEAD
 import SocialMediaDiv from "./components/SocialMediaDiv";
 export default {
   name: "AuthLogin",
@@ -80,12 +74,4 @@ a {
   font-weight: bold;
   text-align: center;
 }
-=======
-export default {
-  name: "AuthLogin",
-};
-</script>
-
-<style>
->>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
 </style>
