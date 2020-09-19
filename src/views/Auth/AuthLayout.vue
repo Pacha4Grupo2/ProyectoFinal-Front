@@ -34,94 +34,10 @@
 <script>
 export default {
   name: "AuthLayout",
- };
+};
+ 
 </script>
 
 <style lang="scss" scoped>
-
-h1 {
-  color: #fff;
-  font-size: 2.5rem;
-  width: 380px;
-}
-
-p {
-  color: #fff;
-}
-
-li {
-  margin-left: 20px;
-}
-
-.auth-layout {
-  height: 100vh;
-  width: 100%;
-}
-
-.logo {
-  padding: 20px;
-  cursor: pointer;
-}
-
-.img-background {
-  background-image: url("./landing.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.banner {
-  width: 70%;
-}
-
-.content {
-  width: 100%;
-  height: 72%;
-  justify-content: center;
-
-  p {
-    padding: 10px;
-    width: 260px;
-    font-size: 1.2rem;
-  }
-}
-
-.support {
-  padding: 10px 20px;
-}
-.sponsors {
-  display: flex;
-  align-items: center;
-}
-
-.container-form {
-  width: 30%;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
-  background: #f8f8fa;
-}
-
-.tab {
-  padding: 0px;
-  background: none;
-  color:#000;
-  padding: 20px;
-  border-style: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-  outline: none;
-  border-radius:0px;
-}
-
-.tab:focus {
-  border-bottom: 3px solid #000;
-}
-
-.tab-component {
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid #bfbfbf;
-}
 
 </style>
