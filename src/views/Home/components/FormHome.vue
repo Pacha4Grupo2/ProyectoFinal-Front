@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
 	<div class="container-form">
 		<h2>Postula y obtén un 10% de descuento en el programa</h2>
 		<form class="form">
@@ -93,3 +94,13 @@ export default {
 	}
 }
 </style>
+=======
+	<div></div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style></style>
+>>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d

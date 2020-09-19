@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="auth-layout d-flex img-background">
     <div class="banner">
       <router-link to="/">
@@ -29,11 +30,18 @@
         <router-view></router-view>
     </div>
    </div>
+=======
+  <div class="auth-layout">
+    <img src="https://picsum.photos/945/660" alt />
+    <router-view></router-view>
+  </div>
+>>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
 </template>
 
 <script>
 export default {
   name: "AuthLayout",
+<<<<<<< HEAD
  };
 </script>
 
@@ -124,4 +132,10 @@ li {
   border-bottom: 1px solid #bfbfbf;
 }
 
+=======
+};
+</script>
+
+<style>
+>>>>>>> b680110e15d3b56320984e656f723ae5596d1e0d
 </style>
