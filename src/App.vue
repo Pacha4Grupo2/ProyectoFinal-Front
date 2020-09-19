@@ -4,8 +4,6 @@
 	</div>
 </template>
 <script>
-import Phone from '@/components/Phone';
-
 export default {
 	name: 'App',
 };
