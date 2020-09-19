@@ -1,10 +1,21 @@
 <template>
-	<div class="container-footer">
-		<div class="container-footer__img">
+	<div class="container-landing">
+		<div class="container-landing__detail">
+			<figure class="container-img__landing">
+				<img class="landing" src="@/assets/images/landing.png" alt="" />
+			</figure>
+			<div class="landing-text">
+				<h1 class="h1" id="h1">
+					¡Explota todo tu potencial tecnológico!
+				</h1>
+				<p class="p" id="p">Con nuestros programas de especialización</p>
+			</div>
+		</div>
+		<div class="respaldo">
 			<small>Con el respaldo de:</small>
 			<figure class="container-img__respaldo">
 				<svg
-					color="#ffffff"
+					color="#000425"
 					height="19.929"
 					width="101.514"
 					viewBox="0 0 101.514 19.929"
@@ -37,7 +48,7 @@
 					></path>
 				</svg>
 				<svg
-					color="#ffffff"
+					color="#000425"
 					height="54.88"
 					width="33.37"
 					viewBox="0 0 27.326 44.937"
@@ -75,7 +86,7 @@
 					</g>
 				</svg>
 				<svg
-					color="#ffffff"
+					color="#000425"
 					height="32.459"
 					width="42"
 					viewBox="0 0 42 32.459"
@@ -120,8 +131,8 @@
 
 <script>
 export default {
-	name: 'Footer',
+	name: 'LadingPage',
 };
 </script>
 
-<style></style>
+<style lang="scss"></style>

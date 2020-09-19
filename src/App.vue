@@ -12,4 +12,8 @@ export default {
 </script>
 <style lang="scss">
 @import '@/assets/styles/main.scss';
+
+.app {
+	overflow: hidden;
+}
 </style>
