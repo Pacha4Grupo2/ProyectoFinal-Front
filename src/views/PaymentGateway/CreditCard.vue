@@ -1,6 +1,5 @@
 <template>
-  <div class="view-debit-card">
-    <h2>VISTA CREDIT CARD</h2>
+  <div class="view-credit-card">
 
     <section>
       <h2>Datos personales</h2>      
@@ -12,20 +11,20 @@
 
     <section>
       <h2>Ingresa la información de tu tarjeta</h2> 
-      <div class="card-container">           
-        <div>
+      <div class="">           
+        <div class="card-container1">
           <input class="card-container-name" name="name" type="text" placeholder="Nombres y apellidos" pattern="[A-Z ]+" required>
+          <input id="debit-card-number" name="cardnumber" type="number" placeholder="Número de tarjeta" maxlength="16" mixlength="16" required>                
+        </div>  
+        <div class="card-container-number">
           <div class="card-container-date">
             <input id="" name="cardmonth" type="number" placeholder="Mes" pattern="[0-9]+" maxlength="2" mixlength="2" required>
             <input id="" name="cardyear" type="number" placeholder="Año" pattern="[0-9]+" maxlength="4" mixlength="4" required>
             <input id="" name="cardcvv" type="number" placeholder="Cvv" pattern="[0-9]+" maxlength="3" mixlength="3" required>
-          </div>
-        </div>
-        <div class="card-container-number">
-          <input id="debit-card-number" name="cardnumber" type="number" placeholder="Número de tarjeta" maxlength="16" mixlength="16" required>                
-          <p>Ingrese una tarjeta válida</p>
-        </div>
-      </div>  
+          </div>        
+          <p style="text-align:end">Ingrese una tarjeta válida</p>
+        </div>  
+      </div>    
     </section>       
     
     <section>
@@ -71,15 +70,16 @@ export default {
     color: #222222;
     font-size: 1.4rem;
     font-weight: bold;
+    
   }
   section{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   input {
     /* Box-model */
     padding: 10px 10px;
     border-radius: 4px;
-    margin: 0 30px 10px 0;
+    margin: 0 0px 20px 0;
     border-color:darkgrey;
 
 
@@ -100,24 +100,22 @@ export default {
   }
   .id-container,
   .card-container,
-  .button-container {
+  .button-container,
+  .card-container1,
+  .card-container-number {
     display: grid;
     grid-template-columns: 1fr 1fr;    
-  }
-/*   .card-container.name //corregir esto
-  .card-container.number {
-    display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(30px, 1fr));
-  } */
-  
+    grid-column-gap: 10px;
+  } 
   .card-container-date,
   .quotas {
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(30px, 1fr));
+    grid-column-gap: 20px;
   }
   .quotas button{
     margin: 0 40px 10px 0;
-    width: 65%; 
+    width: 100%; 
     border-radius: 10px;  
     background-color:rgb(223, 219, 219);
     border: darkgrey;
@@ -126,6 +124,7 @@ export default {
     
     &:hover{
     background-color:#5640ff;
+    color: white; 
     }
   }
   .active{

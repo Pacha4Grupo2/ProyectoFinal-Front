@@ -12,7 +12,23 @@
 					<HeaderPagos />
 					<router-view></router-view>
 				</div>
-				<ShoppingCart />
+				<div>
+					<div class="shoppingcar">
+						<ShoppingCart />
+					</div>
+					
+					<div class="sectionprice d-flex flex-column">
+						<div>
+							<input type="text" placeholder="Agrega un código de descuento" />
+							<hr>
+						</div>
+						<div class="sectionprice1 d-flex justify-between">
+							<h3>Precio final</h3>
+							<h3>s/600.00</h3>
+						</div>
+					</div>
+				</div>	
+
 			</section>
 		</div>
 	</div>
@@ -31,7 +47,6 @@ export default {
 </script>
 
 <style lang="scss">
-/*   @import '/assets/styles/typography.scss'; */
 
 .container-pasarela {
 	margin-left: 50px;
@@ -94,4 +109,30 @@ p {
 	width: 50%;
 	margin: 0 20px;
 }
+.sectionprice h3{
+	font-size: 2.2rem;
+	color: #5640ff;
+  font-weight: bold;
+}
+input{
+	/* Box-model */
+	width: 90%;
+	padding: 10px 10px;
+	border-radius: 4px;
+	margin: 0 0px 20px 0;
+	border-color:darkgrey;
+
+	/*Tipografía*/
+	font-family: 'roboto';
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+.sectionprice1{
+	padding:0 50px 0 0;
+	margin-top: 20px;
+}
+hr{
+	width: 100%;
+}
+
 </style>

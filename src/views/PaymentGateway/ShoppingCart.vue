@@ -1,9 +1,10 @@
 <template>
 	<div class="view-shopping-cart">
-		<h2>VISTA CARRITO DE COMPRAS</h2>
-		<div>
+		<div class="shopping-cart-title">
 			<section class="d-flex">
-				<p>ÍCONO</p>
+				<img style="max-width: 4%; 	max-height: 28px;"
+					src="https://img.icons8.com/ios-filled/50/000000/long-arrow-left.png"
+				/>
 				<h1>Carrito de compras</h1>
 			</section>
 		</div>
@@ -118,6 +119,7 @@ h2 {
 	color: #222222;
 	font-size: 1.3rem;
 	font-weight: bold;
+
 }
 h3 {
 	/* Box-model */
@@ -134,8 +136,8 @@ article {
 }
 article {
 	display: grid;
-	grid-template-columns: 0.3fr 0.6fr 0.2fr;
-	/*  grid-template-columns:repeat(auto-fit, minmax(30px, 1fr)); */
+	grid-template-columns: 0.23fr 0.6fr 0.2fr;
+
 }
 img {
 	width: 90%;
@@ -162,9 +164,6 @@ input {
 	font-size: 1rem;
 	font-weight: bold;
 }
-/*   .section2{
-    position:fixed;
-  } */
 .section2-container {
 	border: solid 1px rgb(86, 88, 86);
 	padding: 57px 35px 55px 35px;
@@ -177,5 +176,11 @@ input {
 }
 .section2-price {
 	margin-bottom: 15px;
+}
+.view-shopping-cart{
+	padding: 100px 40px 0 40px;
+}
+.shopping-cart-title{
+	margin-bottom: 28px;
 }
 </style>

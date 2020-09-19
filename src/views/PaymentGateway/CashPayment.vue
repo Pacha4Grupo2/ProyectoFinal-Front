@@ -1,7 +1,5 @@
 <template>
   <div class="view-cash-payment">
-    <h2>VISTA CASH PAYMENT</h2>
-
 
     <section>
       <img class="img-main" src="https://theme.zdassets.com/theme_assets/170263/e4204de1b989fdda8148d185d396322b469b27f5.png">
@@ -14,12 +12,12 @@
       <h2>Banca por internet y móvil:</h2>
       <p>Paga por internet vía transferencia desde el aplicativos móvil o web de tu banco de preferencia.
       <div class="img-container">
-        <img src="https://www.lan.com/es_pe/images/cajero/wong.gif">
-        <img src="https://www.lan.com/es_pe/images/cajero/wong.gif">
-        <img src="https://www.lan.com/es_pe/images/cajero/wong.gif">
-        <img src="https://www.lan.com/es_pe/images/cajero/wong.gif">
-        <img src="https://www.lan.com/es_pe/images/cajero/wong.gif">
-        <img src="https://www.lan.com/es_pe/images/cajero/wong.gif">
+        <img src="https://dnsgamer.s3-accelerate.amazonaws.com/wp-content/uploads/2020/01/BCP-LOGO-300x104.png">
+        <img src="https://dnsgamer.s3-accelerate.amazonaws.com/wp-content/uploads/2020/01/BCP-LOGO-300x104.png">
+        <img src="https://dnsgamer.s3-accelerate.amazonaws.com/wp-content/uploads/2020/01/BCP-LOGO-300x104.png">
+        <img src="https://dnsgamer.s3-accelerate.amazonaws.com/wp-content/uploads/2020/01/BCP-LOGO-300x104.png">
+        <img src="https://dnsgamer.s3-accelerate.amazonaws.com/wp-content/uploads/2020/01/BCP-LOGO-300x104.png">
+        <img src="https://dnsgamer.s3-accelerate.amazonaws.com/wp-content/uploads/2020/01/BCP-LOGO-300x104.png">
       </div>
     </section>
 
@@ -83,17 +81,19 @@ export default {
   .img-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
   }
   section{
     margin-bottom: 20px;
   }  
   img{
-    width: 40%;
+    width: 80%;
     object-fit: cover;
     border-radius: 7px;
   }
   .img-main{
-    width: 20%;
+    width: 30%;
     object-fit: cover;
     border-radius: 7px;
   }

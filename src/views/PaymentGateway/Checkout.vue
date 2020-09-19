@@ -1,20 +1,13 @@
 <template>
   <div class="view-checkout">
-    <h2>VISTA CHECKOUT - TAB</h2>
 
-    <section class="d-flex">
-      <p>ÍCONO</p>      
-      <h1>Pasarela de pagos</h1>
-    </section>
-
-    <section>
-      <h2>Selecciona tu método de pago</h2>
-      <div class="button-container">
-        <button class="button active">Tarjeta de crédito</button>
-        <button class="button">Tarjeta de débito</button>
-        <button class="button">Depósitos Pago Efectivo</button>
+    <div class="checkout">
+      <div class="sectionprice1">
+        <h2>¡Compra exitosa!</h2>
+        <h4>La boleta o factura solicitada será enviada a tu correo en unos momentos</h4>
+        <button class="button">Volver a mis cursos</button>
       </div>
-    </section>
+    </div>
 
   </div>
 </template>
@@ -26,49 +19,32 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/*   @import '/assets/styles/typography.scss'; */
-  h1 {
-    /* Box-model */
-    margin-bottom: 15px;
-    margin-left: 20px;
+  h2 {
     /*Tipografía*/
     font-family: 'Poppins';
     color: #000425;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
   }
-  h2 {
-    /* Box-model */
-    margin-bottom: 15px;
-    /*Tipografía*/
-    font-family: 'Poppins';
-    color: #222222;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  .button-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }    
+
   button{
     /*Box-model*/
-    padding: 15px 80px;  
+    padding: 15px 120px;  
     margin-right: 5px;
-    background-color:rgb(223, 219, 219);
-    border: darkgrey;
-    color:rgb(109, 105, 105);
+    border: #5640ff;
     font-weight: bold;
-    
-    &:hover{
-      background-color:#5640ff;
-    }
+    width: 100%;
   }
 
-  .active{
-    background-color:#5640ff; 
-    color: white; 
+  .checkout{
+    padding: 20 20 20 20;
+  }
+  .sectionprice1{
+    padding: 50px 30px 0 30px;
+    max-width: 70%;
+  }
+  h4{
+    margin-bottom: 25px;
+    font-size: 1.6rem;
   }
 
-  p{
-    color:red;
-  }  
 </style>

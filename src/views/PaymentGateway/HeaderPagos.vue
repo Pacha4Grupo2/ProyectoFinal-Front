@@ -35,13 +35,23 @@ export default {
 	h1 {
 		margin-bottom: 0;
 	}
+	h2{
+			/* Box-model */
+	margin-bottom: 15px;
+	margin-right: 20px;
+	/*Tipografía*/
+	font-family: 'Poppins';
+	color: #222222;
+	font-size: 1.5rem;
+	font-weight: bold;
+	}
 }
 
 .button-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 10px;
 	.btn-payment {
-		margin-right: 10px;
 		background: #f8f8fa;
 		color: black;
 		font-weight: bold;
@@ -50,9 +60,10 @@ export default {
 		text-align: center;
 		text-decoration-line: none;
 	}
-	.btn-payment:hover {
-		background: #5640ff;
-		color: white;
-	}
+
+	.active{
+    background-color:#5640ff; 
+    color: white; 
+  }
 }
 </style>
