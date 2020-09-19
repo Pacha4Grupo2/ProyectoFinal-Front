@@ -110,9 +110,6 @@
 <script>
 export default {
 	name: 'HeaderPayment',
-	data() {},
-	computed: {},
-	methods: {},
 };
 </script>
 
