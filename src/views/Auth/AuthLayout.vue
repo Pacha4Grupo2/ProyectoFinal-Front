@@ -17,7 +17,7 @@
         </ul>
       </div>
     </div>
-    <div class="container-form">
+    <div class="containerA-form">
       <div class="tab-component">
         <router-link to="/auth/login">
           <button class="tab button">Iniciar Sesión</button>
