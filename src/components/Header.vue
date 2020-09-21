@@ -161,16 +161,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.containerLink {
-	display: flex;
-	a {
-		text-decoration-line: none;
-		margin-right: 10px;
-		p {
-			color: white;
-			font-size: 2.4rem;
-		}
-	}
-}
-</style>
+<style lang="scss"></style>
