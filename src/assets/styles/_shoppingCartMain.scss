@@ -1,0 +1,76 @@
+@import 'mixings';
+.shopping-cart-title h1 {
+    /* Box-model */
+    margin-bottom: 15px;
+    margin-left: 20px;
+    /*Tipografía*/
+    font-family: 'Poppins';
+    color: #000425;
+    font-size: 1.6rem;
+  }
+
+  .layout-cart{
+    padding: 100px 90px 0 40px;
+    top:0px;
+    left:0px;
+    /* xs resolution */
+    @include breakpointShoppingCart(xs){
+        width: 375px;
+        height: 845px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*sm resolution*/
+    @include breakpointShoppingCart(sm){
+        width: 375px;
+        height: 845px;
+    }
+
+    /*md resolution*/
+    @include breakpointShoppingCart(md){
+        width: 100%;
+        height: 660px;
+    }
+
+    /*lg resolution*/
+    @include breakpointShoppingCart(lg){
+        width: 100%;
+        height: 660px;
+    }
+  }
+  .layout-cart1{
+    display: grid;
+    grid-template-columns: 1.5fr 0.7fr;
+    grid-column-gap: 40px;
+    /* xs resolution */
+    @include breakpointShoppingCart(xs){
+        top:170px;
+        left:20px;
+        width:133px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        margin-left:10%;
+    }
+
+    /*sm resolution*/
+    @include breakpointShoppingCart(sm){
+        width: 375px;
+        height: 845px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*md resolution*/
+    @include breakpointShoppingCart(md){
+        width: 100%;
+        height: 660px;
+    }
+
+    /*lg resolution*/
+    @include breakpointShoppingCart(lg){
+        width: 100%;
+        height: 660px;
+    }
+  }
