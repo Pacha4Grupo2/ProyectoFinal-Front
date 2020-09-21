@@ -9,8 +9,10 @@
 					<figure>
 						<img :src="product.imagen_card" class="img-cursos" />
 						<div class="curso__ditail">
-							<p class="programa">PROGRAMA DE ESPECIALIZACIÓN EN</p>
-							<h3 class="curso__title">{{ product.nombre }}</h3>
+							<div class="curso-description">
+								<p class="programa">PROGRAMA DE ESPECIALIZACIÓN EN</p>
+								<h3 class="curso__title">{{ product.nombre }}</h3>
+							</div>
 							<div class="curso__ditail-button">
 								<svg
 									class="imagen-mas"
