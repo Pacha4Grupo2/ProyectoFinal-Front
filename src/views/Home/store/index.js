@@ -37,6 +37,9 @@ export default {
             commit('BACKCOLOR');
             commit('MODALON');
         },
+        getModalB({ commit }) {
+            commit('MODALON');
+        },
     },
     modules: {},
 };
