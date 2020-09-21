@@ -20,7 +20,7 @@
                 margin: 10px 20px 10px 0;
                 figure {
                     width: 100%;
-                    img {
+                    .img-cursos {
                         width: 100%;
                         filter: brightness(0.4);
                         object-fit: cover;
@@ -30,11 +30,21 @@
                         bottom: 15%;
                         left: 10%;
                         color: white;
+                        .curso__ditail-button {
+                            position: absolute;
+                            left: 110%;
+                            display: flex;
+                            align-items: center;
+                            width: 100px;
+                            .imagen-mas {
+                                margin-right: 10px;
+                            }
+                        }
                         .curso__title {
                             font-size: 1.8rem;
                             font-weight: bold;
                         }
-                        p {
+                        .programa {
                             font-size: 1.4rem;
                             margin-bottom: 5px;
                         }
