@@ -1,14 +1,32 @@
 <template>
-  <div class="auth-register">
-    <h2>PAGINA REGISTER</h2>
+  <div class="formRegister-content">
+    <SocialMediaDiv description1="registrarte" description2="registrarte" />
+    <form action="#">
+      <div>
+        <input type="text" placeholder="Nombre y Apellidos" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <input type="password" placeholder="Contraseña" required />
+        <input type="password" placeholder="Repite contraseña" required />
+        <div class="checkbox-container">
+          <input class="checkbox" type="checkbox" name="accept" required />
+          <label>Acepto Términos y condiciones</label>
+        </div>
+      </div>
+      <button class="button btn-register">Registrarse</button>
+    </form>
   </div>
 </template>
 
 <script>
+import SocialMediaDiv from "./components/SocialMediaDiv";
 export default {
   name: "AuthRegister",
+  components: {
+    SocialMediaDiv,
+  },
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+
 </style>

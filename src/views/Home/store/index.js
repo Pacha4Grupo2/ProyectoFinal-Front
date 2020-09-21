@@ -15,6 +15,7 @@ export default {
         },
         MODALON(state) {
             state.modal = !state.modal;
+            state.backColor = !state.backColor;
         },
         BACKCOLOR(state) {
             state.backColor = !state.backColor;
@@ -34,7 +35,10 @@ export default {
             }
         },
         getModal({ commit }) {
-            commit('BACKCOLOR');
+            // commit('BACKCOLOR');
+            commit('MODALON');
+        },
+        getModalB({ commit }) {
             commit('MODALON');
         },
         getModalB({ commit }) {
