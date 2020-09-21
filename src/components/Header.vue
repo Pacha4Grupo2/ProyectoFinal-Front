@@ -76,17 +76,6 @@
 						</g>
 					</svg>
 				</router-link>
-<<<<<<< HEAD
-			</div>
-			<div class="containerLink">
-				<router-link to="/auth/login"><p>Login</p></router-link>
-				<router-link to="/pago/resumen"><p>Resumen</p></router-link>
-				<router-link to="/pago/carrito-de-compras"
-					><p>Carrito de compras</p></router-link
-				>
-				<router-link to="/pago/pasarela"><p>Pasarela</p></router-link>
-=======
->>>>>>> d92a945bbd2841b5d20f40c5fa12258df7de95c8
 			</div>
 			<div class="container-header_modal-header">
 				<div class="container-carrito">
@@ -151,7 +140,7 @@ export default {
 		}),
 	},
 	methods: {
-		scrollProbando: function (e) {
+		scrollProbando: function(e) {
 			this.altura = e.path[1].scrollY;
 			if (e.path[1].scrollY > 2) {
 				this.fondoColor = true;
@@ -163,10 +152,10 @@ export default {
 			getModal: 'HomeStore/getModal',
 		}),
 	},
-	created: function () {
+	created: function() {
 		window.addEventListener('scroll', this.scrollProbando);
 	},
-	destroyed: function () {
+	destroyed: function() {
 		window.removeEventListener('scroll', this.scrollProbando);
 	},
 };
