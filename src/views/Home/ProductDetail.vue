@@ -1,21 +1,21 @@
 <template>
 	<div class="view-productdetail">
-    <HeaderCourseDetail />
+		<Header />
 		<PhoneProduct />
-    <LandingPageProduct />
-    <Respaldo />
-    <Horarios />    
-    <Malla />  
-    <Eleccion />
-    <Empleabilidad />       
-    <Certificacion />   
+		<LandingPageProduct />
+		<Respaldo />
+		<Horarios />
+		<Malla />
+		<Eleccion />
+		<Empleabilidad />
+		<Certificacion />
 		<FormProduct />
-		<FooterCourseDetail /> 
+		<FooterCourseDetail />
 	</div>
 </template>
 
 <script>
-import HeaderCourseDetail from '@/components/mery/HeaderCourseDetail.vue';
+import Header from '@/components/Header.vue';
 import LandingPageProduct from '@/components/mery/LandingPageProduct.vue';
 import Respaldo from '@/components/mery/Respaldo.vue';
 import Horarios from '@/components/mery/Horarios.vue';
@@ -31,20 +31,20 @@ import FooterCourseDetail from '@/components/mery/FooterCourseDetail.vue';
 export default {
 	name: 'ProductDetail',
 	components: {
-    HeaderCourseDetail,
-    LandingPageProduct,
-    Respaldo,
-    Horarios,
-    Malla,
-    Eleccion,
-    Certificacion,
-    Empleabilidad,
+		Header,
+		LandingPageProduct,
+		Respaldo,
+		Horarios,
+		Malla,
+		Eleccion,
+		Certificacion,
+		Empleabilidad,
 
 		PhoneProduct,
 		FormProduct,
-		FooterCourseDetail, 
-  }
-};  
+		FooterCourseDetail,
+	},
+};
 </script>
 
 <style></style>
