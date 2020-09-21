@@ -1,0 +1,124 @@
+.container-landing {
+    width: 100%;
+    .container-landing__detail {
+        position: relative;
+        width: 100%;
+        .container-img__landing {
+            .landing {
+                width: 100%;
+                height: 420px;
+            }
+        }
+        .landing-text {
+            position: absolute;
+            left: 18.5%;
+            top: 35%;
+            color: white;
+            width: 50%;
+            line-height: 1.5;
+            font-family: map-get($f-family, primary);
+            .h1 {
+                font-size: 5.4rem;
+                font-weight: bold;
+                margin-bottom: 40px;
+                letter-spacing: 2px;
+            }
+            .p {
+                font-size: 2rem;
+            }
+        }
+    }
+    .respaldo {
+        width: 65%;
+        margin: 50px auto;
+        small {
+            padding-left: 1.8%;
+            font-size: 1.4rem;
+        }
+        .container-img__respaldo {
+            display: flex;
+            align-items: center;
+            height: 54px;
+            margin-top: 15px;
+            .SVG {
+                margin: 0 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1326px) {
+    .landing-text {
+        #h1 {
+            font-size: 3.4rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+        .p {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 874px) {
+    .landing-text {
+        #h1 {
+            font-size: 2.4rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+        .p {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 647px) {
+    .landing-text {
+        #h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+        #p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 523px) {
+    .container-landing {
+        .container-landing__detail {
+            .landing-text {
+                width: 69%;
+                #h1 {
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    margin-bottom: 40px;
+                    letter-spacing: 2px;
+                }
+                #p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container-landing {
+        .respaldo {
+            width: 100%;
+            text-align: center;
+            small {
+                margin-bottom: 10px;
+            }
+            .container-img__respaldo {
+                justify-content: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,236 @@
+.container-main {
+    width: 100%;
+    .container-cursos {
+        width: 65%;
+        margin: 0 auto;
+        &__title {
+            color: #000425;
+            font-size: 2.8rem;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        &__list {
+            width: 81%;
+            display: flex;
+            flex-wrap: wrap;
+            .curso {
+                width: 380px;
+                position: relative;
+                cursor: pointer;
+                margin: 10px 20px 10px 0;
+                figure {
+                    width: 100%;
+                    .img-cursos {
+                        width: 100%;
+                        filter: brightness(0.4);
+                        object-fit: cover;
+                    }
+                    .curso__ditail {
+                        position: absolute;
+                        bottom: 15%;
+                        left: 10%;
+                        color: white;
+                        .curso__ditail-button {
+                            position: absolute;
+                            left: 110%;
+                            display: flex;
+                            align-items: center;
+                            width: 100px;
+                            .imagen-mas {
+                                margin-right: 10px;
+                            }
+                        }
+                        .curso__title {
+                            font-size: 1.8rem;
+                            font-weight: bold;
+                        }
+                        .programa {
+                            font-size: 1.4rem;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1556px) {
+    .container-main {
+        .container-cursos {
+            .container-cursos__list {
+                width: 100%;
+                .curso {
+                    width: 380px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    .container-main {
+        .container-cursos {
+            .container-cursos__list {
+                width: 100%;
+                .curso {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .container-main {
+        .container-cursos {
+            .container-cursos__title {
+                font-size: 2.5rem;
+            }
+            .container-cursos__list {
+                width: 100%;
+                .curso {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1247px) {
+    .container-main {
+        .container-cursos {
+            .container-cursos__list {
+                width: 100%;
+                .curso {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .container-main {
+        .container-cursos {
+            .container-cursos__title {
+                font-size: 1.8rem;
+            }
+            .container-cursos__list {
+                width: 100%;
+                .curso {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1002px) {
+    .container-main {
+        .container-cursos {
+            width: 69%;
+            .container-cursos__list {
+                width: 100%;
+                .curso {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 941px) {
+    .container-main {
+        .container-cursos {
+            .container-cursos__title {
+                line-height: 1.5;
+            }
+            .container-cursos__list {
+                width: 100%;
+                .curso {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 728px) {
+    .container-main {
+        .container-cursos {
+            .container-cursos__list {
+                width: 100%;
+                .curso {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .container-main {
+        .container-cursos {
+            .container-cursos__title {
+                font-size: 1.8rem;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container-main {
+        .container-cursos {
+            .container-cursos__list {
+                width: 100%;
+                .curso {
+                    width: 380px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .container-main {
+        .container-cursos {
+            .container-cursos__title {
+                font-size: 1.4rem;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 417px) {
+    .container-main {
+        .container-cursos {
+            .container-cursos__title {
+                font-size: 1.3rem;
+            }
+            &__list {
+                .curso {
+                    width: 350px;
+                    figure {
+                        .curso__ditail {
+                            position: absolute;
+                            bottom: 15%;
+                            left: 5%;
+                            color: white;
+                            .curso__title {
+                                font-size: 1.4rem;
+                                font-weight: bold;
+                            }
+                            p {
+                                font-size: 1rem;
+                                margin-bottom: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
