@@ -2,26 +2,26 @@
 	<div class="modalWrapper">
 		<div class="itemModal">
 			<div class="link-container">
-				<router-link to="/auth/login" class="listItem">
-					Login
-				</router-link>
-
-				<router-link to="/pago/carrito-de-compras" class="listItem">
-					Carito de compra
-				</router-link>
-
-				<router-link to="/pago/pasarela/tarjeta-de-credito" class="listItem">
-					Pasarela de Pago
-				</router-link>
-
-				<router-link to="/pago/pasarela/tarjeta-de-credito" class="listItem">
-					Pasarela de Pago
-				</router-link>
-
-				<router-link to="/pago/resumen" class="listItem">
-					Resumen de Compra
-				</router-link>
-
+				<div @click="getModalB" class="listItem">
+					<router-link to="/auth/login">
+						Login
+					</router-link>
+				</div>
+				<div @click="getModalB" class="listItem">
+					<router-link to="/pago/carrito-de-compras">
+						Carito de compra
+					</router-link>
+				</div>
+				<div @click="getModalB" class="listItem">
+					<router-link to="/pago/pasarela/tarjeta-de-credito">
+						Pasarela de Pago
+					</router-link>
+				</div>
+				<div @click="getModalB" class="listItem">
+					<router-link to="/pago/resumen">
+						Resumen de Compra
+					</router-link>
+				</div>
 				<div></div>
 				<div></div>
 				<div></div>
@@ -208,6 +208,9 @@ export default {
 		a {
 			text-decoration-line: none;
 			color: white;
+		}
+		a:hover {
+			color: red;
 		}
 	}
 }
