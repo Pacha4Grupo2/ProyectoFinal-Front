@@ -80,7 +80,7 @@
 			<div class="container-header_modal-header">
 				<div class="container-carrito">
 					<div class="numeros-cursos">
-						0
+						{{ carrito }}
 					</div>
 					<img
 						class="carrito"
@@ -137,6 +137,9 @@ export default {
 	computed: {
 		...mapState({
 			backColor: (state) => state.HomeStore.backColor,
+		}),
+		...mapState({
+			carrito: (state) => state.HomeStore.carrito,
 		}),
 	},
 	methods: {

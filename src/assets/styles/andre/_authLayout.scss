@@ -1,37 +1,37 @@
-li {
-  margin-left: 20px;
-}
-
 .auth-layout {
   height: 100vh;
   width: 100%;
 }
 
-.logo {
+.logo-auth {
   padding: 20px;
   cursor: pointer;
 }
 
-.img-background {
-  background-image: url('~@/assets/images/landing.png');
+.img-backgroundA {
+  background-image: url("~@/assets/images/landing.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.banner {
+.banner-auth {
   width: 70%;
 }
 
-.content {
+.contentA {
   width: 100%;
   height: 72%;
   justify-content: center;
+  display: flex;
 
-  h1 {
+  .h1-auth {
     color: #fff;
     font-size: 2.5rem;
     width: 380px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: map-get($f-family, primary);
   }
   p {
     padding: 10px;
@@ -41,24 +41,26 @@ li {
   }
 }
 
-.support {
+.supportA {
   padding: 10px 20px;
   color: #fff;
 }
-.sponsors {
+
+.sponsorsA {
   display: flex;
   align-items: center;
+
+  li {
+    margin-left: 20px;
+  }
 }
 
 .containerA-form {
   width: 30%;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
   background: #f8f8fa;
 }
 
-.tab {
+.tabA {
   padding: 0px;
   background: none;
   color: #000;
@@ -70,12 +72,40 @@ li {
   border-radius: 0px;
 }
 
-.router-link-active .tab {
+.router-link-active .tabA {
   border-bottom: 3px solid #000;
 }
 
-.tab-component {
+.tabA-component {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #bfbfbf;
+}
+
+@media (max-width: 1024px) {
+  .tabA {
+    padding: 17px;
+  }
+}
+
+@media (max-width: 792px) {
+  .tabA {
+    padding: 14px;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 715px) {
+  .tabA {
+    font-size: 1.8rem;
+    padding: 18px;
+  }
+
+  .banner-auth {
+    display: none;
+  }
+
+  .containerA-form {
+    width: 100%;
+  }
 }
