@@ -1,9 +1,9 @@
 <template>
-	<div class="auth-layout d-flex img-background">
-		<div class="banner">
+	<div class="auth-layout d-flex img-backgroundA">
+		<div class="banner-auth">
 			<router-link to="/">
 				<svg
-					class="logo"
+					class="logo-auth"
 					fill="#ffffff"
 					width="150"
 					viewBox="0 0 138.655 22.572"
@@ -70,13 +70,13 @@
 					</g>
 				</svg>
 			</router-link>
-			<div class="content d-flex flex-column align-end">
-				<h1>¡Explota todo tu potencial tecnológico!</h1>
+			<div class="contentA flex-column align-end">
+				<h1 class="h1-auth">¡Explota todo tu potencial tecnológico!</h1>
 				<p>Con nuestros programas de especialización</p>
 			</div>
 			<div>
-				<p class="support">Con el respaldo de:</p>
-				<ul class="sponsors">
+				<p class="supportA">Con el respaldo de:</p>
+				<ul class="sponsorsA">
 					<li>
 						<a href=""
 							><svg
@@ -197,12 +197,12 @@
 			</div>
 		</div>
 		<div class="containerA-form">
-			<div class="tab-component">
+			<div class="tabA-component">
 				<router-link to="/auth/login">
-					<button class="tab button">Iniciar Sesión</button>
+					<button class="tabA button">Iniciar Sesión</button>
 				</router-link>
 				<router-link to="/auth/register">
-					<button class="tab button">Registrarse</button>
+					<button class="tabA button">Registrarse</button>
 				</router-link>
 			</div>
 			<router-view></router-view>
