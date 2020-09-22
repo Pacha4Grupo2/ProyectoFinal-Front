@@ -9,6 +9,7 @@
 					<figure>
 						<img :src="product.imagen_card" class="img-cursos" />
 						<div class="curso__ditail">
+							<button class="btn-Agregar-Home">Agregar</button>
 							<div class="curso-description">
 								<p class="programa">PROGRAMA DE ESPECIALIZACIÓN EN</p>
 								<h3 class="curso__title">{{ product.nombre }}</h3>

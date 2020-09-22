@@ -41,9 +41,6 @@ export default {
         getModalB({ commit }) {
             commit('MODALON');
         },
-        getModalB({ commit }) {
-            commit('MODALON');
-        },
     },
     modules: {},
 };
