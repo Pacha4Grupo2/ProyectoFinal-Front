@@ -1,75 +1,20 @@
 <template>
 	<div class="view-shopping-cart">
-
 		<div class="d-flex">
 			<section class="section1">
-				<article>
-					<img src="https://pachaqtec.edu.pe/images/front_end.webp" />
+				<article v-for="producto in totalProducts" :key="producto.id">
+					<img :src="producto.imagen_card" />
 					<div class="d-flex flex-column justify-between">
 						<div>
-							<h2>Gestión de Envases, Empaques y Embalajes</h2>
-							<p>Dto.25%</p>
+							<h2>{{ producto.nombre }}</h2>
+							<p>Dto. {{ producto.descuento }}%</p>
 						</div>
-						<a href="">Eliminar</a>
+						<button class="btn-eliminar" @click="eliminar(producto.id)">
+							Eliminar
+						</button>
 					</div>
 					<div>
-						<h3>s/269.00</h3>
-					</div>
-				</article>
-
-				<article>
-					<img src="https://pachaqtec.edu.pe/images/front_end.webp" />
-					<div class="d-flex flex-column justify-between">
-						<div>
-							<h2>Gestión de Envases, Empaques y Embalajes</h2>
-							<p>Dto.10%</p>
-						</div>
-						<a href="">Eliminar</a>
-					</div>
-					<div>
-						<h3>s/269.00</h3>
-					</div>
-				</article>
-				<article>
-					<img src="https://pachaqtec.edu.pe/images/front_end.webp" />
-					<div class="d-flex flex-column justify-between">
-						<div>
-							<h2>Gestión de Envases, Empaques y Embalajes</h2>
-							<p>Dto.10%</p>
-						</div>
-						<a href="">Eliminar</a>
-					</div>
-					<div>
-						<h3>s/269.00</h3>
-					</div>
-				</article>
-				<article>
-					<img src="https://pachaqtec.edu.pe/images/front_end.webp" />
-					<div class="d-flex flex-column justify-between">
-						<div>
-							<h2>Gestión de Envases, Empaques y Embalajes</h2>
-							<p>Dto.10%</p>
-						</div>
-						<a href="">Eliminar</a>
-					</div>
-					<div>
-						<h3>s/269.00</h3>
-					</div>
-				</article>
-				<article>
-					<img src="https://pachaqtec.edu.pe/images/front_end.webp" />
-					<div class="d-flex flex-column justify-between">
-						<div>
-							<h2>Gestión de Envases, Empaques y Embalajes</h2>
-							<p>Dto.40%</p>
-							<br />
-							<p>Regalo para: panda@gmail.com</p>
-						</div>
-
-						<a href="">Eliminar</a>
-					</div>
-					<div>
-						<h3>s/269.00</h3>
+						<h3>S/. {{ producto.precio }}</h3>
 					</div>
 				</article>
 			</section>
@@ -78,12 +23,36 @@
 </template>
 
 <script>
+import { mapState, mapActions } from 'vuex';
 export default {
 	name: 'ShoppingCart',
+	computed: {
+		...mapState({
+			totalProducts: (state) => state.HomeStore.totalProducts,
+		}),
+	},
+	methods: {
+		...mapActions({
+			eliminar: 'HomeStore/eliminar',
+		}),
+	},
 };
 </script>
 
 <style scoped>
+.btn-eliminar {
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: transparent;
+	font-family: 'Roboto';
+	color: #5640ff;
+	display: inline-block;
+	text-align: left;
+	border: none;
+	outline: none;
+	text-decoration-line: underline;
+	font-weight: bold;
+}
 .view-shopping-cart h1 {
 	/* Box-model */
 	margin-bottom: 15px;
@@ -101,7 +70,6 @@ export default {
 	color: #222222;
 	font-size: 1.3rem;
 	font-weight: bold;
-
 }
 .view-shopping-cart h3 {
 	/* Box-model */
@@ -120,7 +88,6 @@ export default {
 .view-shopping-cart article {
 	display: grid;
 	grid-template-columns: 0.23fr 0.6fr 0.2fr;
-
 }
 .view-shopping-cart img {
 	width: 90%;
@@ -147,10 +114,10 @@ export default {
 	font-size: 1rem;
 	font-weight: bold;
 }
-.view-shopping-cart{
+.view-shopping-cart {
 	padding: 15px 50px 0 40px;
 }
-.shopping-cart-title{
+.shopping-cart-title {
 	margin-bottom: 28px;
 }
 </style>

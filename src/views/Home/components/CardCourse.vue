@@ -12,8 +12,10 @@
 					<figure>
 						<img :src="product.imagen_card" class="img-cursos" />
 						<div class="curso__ditail">
-							<p class="programa">PROGRAMA DE ESPECIALIZACIÓN EN</p>
-							<h3 class="curso__title">{{ product.nombre }}</h3>
+							<div class="curso-description">
+								<p class="programa">PROGRAMA DE ESPECIALIZACIÓN EN</p>
+								<h3 class="curso__title">{{ product.nombre }}</h3>
+							</div>
 							<div class="curso__ditail-button">
 								<svg
 									class="imagen-mas"
@@ -70,20 +72,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.curso {
-	position: relative;
-
-	.curso-add {
-		position: absolute;
-		right: 10px;
-		top: 10px;
-		background: red;
-		color: #fff;
-		z-index: 9;
-		padding: 10px;
-		border: 0;
-		border-radius: 4px;
-	}
-}
-</style>
+<style lang="scss"></style>
