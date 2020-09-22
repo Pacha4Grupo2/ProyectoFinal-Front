@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    transition: all 0.15s ease-out 0s;
     z-index: 1;
     .container-header__menu {
         display: flex;
@@ -12,10 +11,37 @@
         align-items: center;
         width: 71.7%;
         height: 61px;
+        .container-header_modal-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90px;
+            .container-carrito {
+                margin-right: 20px;
+                position: relative;
+                .numeros-cursos {
+                    position: absolute;
+                    background-color: red;
+                    color: white;
+                    padding: 2px 5px 3px 5px;
+                    right: 4px;
+                    top: 6px;
+                    border-radius: 50%;
+                    text-align: center;
+                    font-size: 1.2rem;
+                }
+                .carrito {
+                    width: 45px;
+                }
+            }
+        }
     }
 }
 
 .header-color {
     background-color: #000425;
-    transition: all 0.15s ease-out 0s;
+}
+
+.fondo-color {
+    background-color: #000425;
 }

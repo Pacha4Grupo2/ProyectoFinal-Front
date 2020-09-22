@@ -1,4 +1,4 @@
-.contact-form-wrapper{
+.contact-form-wrapper {
     padding: 4vw;
     right: 0px;
     margin-top: 40px;
@@ -6,32 +6,36 @@
     top: 0px;
     margin-right: calc((100vw - 1260px) / 2);
 }
-.contact-form-phone{
-    background-image: url("/ProyectoFinal-Front/src/assets/phone.png");
+
+.contact-form-phone {
+    background-image: url('/ProyectoFinal-Front/src/assets/phone.png');
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     width: 370px;
     height: 600px;
 }
-.contact-form-container-phone{
+
+.contact-form-container-phone {
     padding: 90px 72px;
     position: relative;
     height: 100%;
 }
-.form-title{
+
+.form-title {
     font-size: 16px;
     color: #000425;
     font-weight: 500;
     opacity: 1;
 }
-.contact-form-GridPhone{
+
+.contact-form-GridPhone {
     display: grid;
     gap: 13px;
     padding-top: 20px;
 }
 
-.input-label{
+.input-label {
     color: rgb(0, 0, 0);
     font-size: 12px;
     font-weight: lighter;
@@ -42,7 +46,8 @@
     opacity: 1;
 }
 
-.input-class{
+.input-class {
+    margin: 0;
     height: 12px;
     width: 88%;
     border: 1px solid rgb(139, 144, 153);
@@ -55,13 +60,13 @@
     color: rgb(0, 0, 0);
 }
 
-.form-select{
+.form-select {
     font-size: 12px;
     position: relative;
     cursor: pointer;
 }
 
-.description{
+.description {
     height: 12px;
     width: 88%;
     padding: 15px 10px;
@@ -75,7 +80,7 @@
     color: rgb(139, 144, 153);
 }
 
-.ul-class{
+.ul-class {
     width: 88%;
     height: fit-content;
     background-color: rgb(255, 255, 255);
@@ -88,7 +93,7 @@
     max-height: 0px;
 }
 
-.item-form-select{
+.item-form-select {
     height: 8px;
     width: 88%;
     padding: 12px 10px;
@@ -99,7 +104,7 @@
     color: rgb(0, 4, 37);
 }
 
-.check-label{
+.check-label {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -109,7 +114,7 @@
     padding-bottom: 10px;
 }
 
-.check-input{
+.check-input {
     // appearance: none;
     // background-color: white;
     // border: 0.125rem solid rgb(128, 128, 128);
@@ -121,11 +126,13 @@
     // position: relative;
     // transition: all 0.25s ease 0s;
     // vertical-align: middle;
-    // width: 1.2rem;
+    margin: 0;
+    width: 20px;
+    margin: 0 10px;
     background-image: url(/ProyectoFinal-Front/src/assets/Layer2.png);
 }
 
-.button-submit-form{
+.button-submit-form {
     background: rgb(86, 64, 255);
     color: white;
     border-radius: 6px;

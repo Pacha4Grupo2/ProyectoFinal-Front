@@ -22,32 +22,5 @@ export default {
 </script>
 
 <style lang="scss">
-//iconos Fb y linkedin
-.form-div {
-  text-align: center;
-  padding: 20px;
 
-  p {
-    color: #000;
-    // padding-bottom: 20px;
-    font-size: 1.4rem;
-  }
-}
-
-.social-icon {
-  padding: 12px;
-  margin: 10px;
-  // margin-bottom: 20px;
-  // margin-left: 20px;
-  color: #bfbfbf;
-  border-radius: 5px;
-  background: none;
-  border: 1px solid;
-  cursor: pointer;
-  outline: none;
-}
-
-.iconfb {
-  padding: 12px 14px;
-}
 </style>
