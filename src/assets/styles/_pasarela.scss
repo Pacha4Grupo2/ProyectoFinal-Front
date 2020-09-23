@@ -60,7 +60,7 @@
 .container-headerpagos {
 	width: 50%;
     margin: 0 20px;
-    /*sm resolution*/
+    /*xs resolution*/
     @include breakpointPasarela(xs){
         display: flex;
         flex-direction: column;
@@ -99,10 +99,12 @@
     display: flex;
     @include breakpointPasarela(xs){
         padding-left: 0px;
+        width:94%;
     }
     /* sm resolution */
 	@include breakpointPasarela(sm){
         padding-left: 0px;
+        width:94%;
     }
 }
 hr{

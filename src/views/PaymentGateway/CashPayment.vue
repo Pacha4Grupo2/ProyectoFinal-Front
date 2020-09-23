@@ -82,49 +82,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.view-cash-payment h2 {
-	/* Box-model */
-	margin-bottom: 15px;
-	margin-right: 20px;
-	/*Tipografía*/
-	font-family: 'Poppins';
-	color: #222222;
-	font-size: 1.4rem;
-	font-weight: bold;
-}
-
-.button-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
-.view-cash-payment button {
-	width: 95%;
-	padding: 15px 0;
-}
-.img-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	grid-column-gap: 10px;
-	grid-row-gap: 10px;
-}
-.view-cash-payment section {
-	margin-bottom: 20px;
-}
-.view-cash-payment img {
-	width: 80%;
-	object-fit: cover;
-	border-radius: 7px;
-}
-.img-main {
-	max-width: 40%;
-	object-fit: cover;
-	border-radius: 7px;
-}
-.view-cash-payment p {
-	font-family: 'roboto';
-	color: #222222;
-	font-size: 1.1rem;
-	margin-bottom: 15px;
-	font-weight: bold;
-}
+@import '@/assets/styles/_cashPayment.scss';
 </style>

@@ -12,7 +12,16 @@
   }
 .view-credit-card section{
     margin-bottom: 15px;
-      /* xs resolution */
+    /*xs resolution*/
+    @include breakpointPasarela(xs){
+      grid-template-columns: repeat(1,minmax(50px,1fr));
+      width: 180%;
+    }
+    /*sm resolution*/
+      @include breakpointPasarela(sm){
+      grid-template-columns: repeat(1,minmax(50px,1fr));
+      width: 180%;
+      } 
   }
 .view-credit-card input {
     /* Box-model */
@@ -31,6 +40,14 @@
 .view-credit-card button{
     width: 97%;
     padding: 15px 0;
+    /*xs resolution*/
+    @include breakpointPasarela(xs){
+      margin-left:-8%;
+    }
+    /*sm resolution*/
+      @include breakpointPasarela(sm){
+        margin-left:-8%;
+      }
   }
 .view-credit-card p,
   .card-container-number input{
@@ -45,7 +62,25 @@
     display: grid;
     grid-template-columns: 1fr 1fr;    
     grid-column-gap: 10px;
+    /* xs resolution */
+	@include breakpointPasarela(xs){
+		grid-template-columns: repeat(1,minmax(50px,1fr));
+	}
+	/*sm resolution*/
+    @include breakpointPasarela(sm){
+    grid-template-columns: repeat(1,minmax(50px,1fr));
+    }
   } 
+  .button-container{
+    /*xs resolution*/
+    @include breakpointPasarela(xs){
+      margin-left:20%;
+    }
+    /*sm resolution*/
+      @include breakpointPasarela(sm){
+        margin-left:20%;
+      }
+  }
   .card-container-date,
   .quotas {
     display: grid;
