@@ -1,0 +1,74 @@
+@import 'mixings';
+.view-checkout h2 {
+	/*Tipografía*/
+	font-family: 'Poppins';
+	color: #000425;
+	font-size: 1.9rem;
+}
+
+.view-checkout{
+    /*xs resolution*/
+    @include breakpointPasarela(xs){
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    /*sm resolution*/
+    @include breakpointPasarela(sm){
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+}
+
+.view-checkout button {
+	/*Box-model*/
+	padding: 15px 120px;
+	margin-right: 5px;
+	border: #5640ff;
+	font-weight: bold;
+    width: 0%;
+    /*xs resolution*/
+    @include breakpointPasarela(xs){
+        padding: 0px 120px;
+    }
+
+    /*sm resolution*/
+    @include breakpointPasarela(sm){
+        padding: 0px 120px;
+    }
+}
+
+.checkout {
+    padding: 20px 20px 20px 20px;
+    /*xs resolution*/
+    @include breakpointPasarela(xs){
+        width: 140%;
+    }
+
+    /*sm resolution*/
+    @include breakpointPasarela(sm){
+        width: 140%;
+    }
+}
+.sectionprice1 {
+	padding: 50px 30px 50px 30px;
+	max-width: 70%;
+    border: solid 1px rgb(86, 88, 86);
+    /*xs resolution*/
+    @include breakpointPasarela(xs){
+        display: block;
+        margin-left: -10%;
+    }
+
+    /*sm resolution*/
+    @include breakpointPasarela(sm){
+        display: block;
+        margin-left: -10%;
+    }
+}
+.view-checkout h4 {
+	margin-bottom: 25px;
+	font-size: 1.6rem;
+}

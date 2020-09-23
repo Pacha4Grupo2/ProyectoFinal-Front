@@ -9,7 +9,6 @@
 <script>
 import Header from '@/components/mery/HeaderPayment';
 import Menu from '@/components/Menu';
-
 import { mapState } from 'vuex';
 export default {
 	name: 'LayoutPaymentGateway',

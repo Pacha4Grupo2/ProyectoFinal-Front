@@ -209,6 +209,9 @@ export default {
 			text-decoration-line: none;
 			color: white;
 		}
+		a:hover {
+			color: red;
+		}
 	}
 }
 .modalButton {

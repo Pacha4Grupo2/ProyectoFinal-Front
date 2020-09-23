@@ -1,0 +1,80 @@
+@import 'mixings';
+.view-summary h1 {
+	/* Box-model */
+	margin-bottom: 15px;
+	margin-left: 20px;
+	/*Tipografía*/
+	font-family: 'Poppins';
+	color: #000425;
+	font-size: 1.6rem;
+}
+.view-summary h2 {
+	/* Box-model */
+	margin-bottom: 15px;
+	/*Tipografía*/
+	font-family: 'Poppins';
+	color: #222222;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+.view-summary h3 {
+	/* Box-model */
+	margin-bottom: 15px;
+	/*Tipografía*/
+	font-family: 'Poppins';
+	color: #222222;
+	font-size: 1.5rem;
+    font-weight: bold;
+    /*xs resolution*/
+    @include breakpointPasarela(xs){
+        margin-left:-6%;
+    }
+
+    /*sm resolution*/
+    @include breakpointPasarela(sm){
+        margin-left:-6%;
+    }
+}
+.view-summary section {
+    margin-bottom: 15px;
+}
+.view-summary article {
+	display: grid;
+	grid-template-columns: 0.45fr 2.5fr 0.5fr;
+	grid-column-gap: 15px;
+}
+.view-summary img {
+	height: 110px;
+	object-fit: cover;
+	border-radius: 7px;
+}
+.view-summary p {
+	color: #5640ff;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+.totalprice {
+	display: grid;
+	grid-template-columns: 2.2fr 1fr;
+}
+.total h3 {
+	color: #5640ff;
+	font-weight: bold;
+	font-size: 1.6rem;
+}
+.view-summary {
+    padding: 100px 60px 0 80px;
+    /*xs resolution*/
+    @include breakpointPasarela(xs){
+        display: flex;
+        flex-direction: column;
+        margin-left: -15%;
+    }
+
+    /*sm resolution*/
+    @include breakpointPasarela(sm){
+        display: flex;
+        flex-direction: column;
+        margin-left: -15%;
+    }
+}
