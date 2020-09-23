@@ -24,7 +24,7 @@ export default {
 <style lang="scss">
 .container-certificacion {
 	margin: 50px auto;
-	width: 71%;
+	width: 72%;
 	h2 {
 		color: #000425;
 		font-size: 2.2rem;

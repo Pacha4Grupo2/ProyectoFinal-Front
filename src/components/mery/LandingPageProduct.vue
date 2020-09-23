@@ -1,21 +1,21 @@
 <template>
-	<div class="container-landing">
-		<div class="container-landing__detail">
-			<figure class="container-img__landing">
-				<img class="landing" :src="producto.imagen" alt="" />
+	<div class="container-landing-m">
+		<div class="container-landing__detail-m">
+			<figure class="container-img__landing-m">
+				<img class="landing-m" :src="producto.imagen" alt="" />
 			</figure>
-			<div class="landing-text">
-				<h3>ESPECIALÍZATE EN</h3>
+			<div class="landing-text-m">
+				<h3 class="h3m">ESPECIALÍZATE EN</h3>
 				<h1 class="h1m" id="h1">{{ producto.nombre }}</h1>
 			</div>
 		</div>
-		<div class="respaldo">
-			<h3>
+		<div class="respaldo-m">
+			<h3 class="h3m">
 				Construye los algoritmos y desarrolla la lógica detrás del
 				funcionamiento de webs y aplicaciones web.
 			</h3>
-			<h2>Con el respaldo de:</h2>
-			<figure class="container-img__respaldo">
+			<h2 class="h2m">Con el respaldo de:</h2>
+			<figure class="container-img__respaldo-m">
 				<svg
 					color="#000425"
 					height="19.929"

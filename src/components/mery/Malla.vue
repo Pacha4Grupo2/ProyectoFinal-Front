@@ -173,6 +173,28 @@ export default {
     }
   }
 }
+@media only screen and (max-width: 414px){
+  .container-malla{
+    width: 90%;
+    .container-malla-description-detail {
+      width: 89%;
+    }
+    .container-malla-description-detail1{
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 411px){
+  .container-malla{
+    width: 90%;
+    .container-malla-description-detail {
+      width: 89%;
+    }
+    .container-malla-description-detail1{
+      display: none;
+    }
+  }
+}
 @media only screen and (max-width: 400px){
   .container-malla{
     width: 83%;

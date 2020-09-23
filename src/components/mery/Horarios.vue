@@ -130,6 +130,34 @@ export default {
     }
   }
 }
+@media only screen and (max-width: 414px) {
+.container-schedule{
+  .container-schedule-detail{
+    width: 96.5%;
+      .button{
+        width: 98%;
+      }
+    }
+
+    .button-container-schedule{
+      width: 90.5%;
+    }
+  }
+}
+@media only screen and (max-width: 411px) {
+.container-schedule{
+  .container-schedule-detail{
+    width: 96.5%;
+      .button{
+        width: 98.5%;
+      }
+    }
+
+    .button-container-schedule{
+      width: 91%;
+    }
+  }
+}
 @media only screen and (max-width: 400px) {
 .container-schedule{
   .container-schedule-detail{
