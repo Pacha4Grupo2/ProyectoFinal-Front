@@ -62,10 +62,33 @@ export default {
     .container-certificacion-img{
       margin-bottom: 45px;
       img {
-        width: 90%;
+/*         width: 90%; */
         object-fit: cover;
       }
     }  
   }
 }
+@media only screen and (max-width: 1024px){
+  .container-certificacion{
+    width: 90%;
+    .container-certificacion-p{
+        p{
+        width: 97%; 
+        font-size: 1.5rem;      
+      }
+    }
+  }
+}
+@media only screen and (max-width: 370px){
+  .container-certificacion{
+    width: 83%;
+    .container-certificacion-p{
+        p{
+        width: 98%;       
+      }
+    }
+     
+  }
+}
+
 </style>

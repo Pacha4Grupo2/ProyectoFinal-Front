@@ -73,7 +73,7 @@ export default {
     width: 94.5%;
       .button{
         padding: 8px 150px;
-        width: 92.8%;
+        width: 98.1%;
         font-size: 1.9rem;
         margin-bottom: 20px;
       }
@@ -83,7 +83,21 @@ export default {
       letter-spacing: 2px;
     }
     .button-container-schedule{
-      width: 90%;
+      width: 95.4%;
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+.container-schedule{
+  .container-schedule-detail{
+    width: 95.5%;
+      .button{
+        width: 97.5%;
+      }
+    }
+
+    .button-container-schedule{
+      width: 94.2%;
     }
   }
 }
@@ -93,12 +107,12 @@ export default {
   .container-schedule-detail{
     width: 96.5%;
       .button{
-        width: 93.5%;
+        width: 98%;
       }
     }
 
     .button-container-schedule{
-      width: 90%;
+      width: 94%;
     }
   }
 }
@@ -107,12 +121,55 @@ export default {
   .container-schedule-detail{
     width: 96.5%;
       .button{
-        width: 95%;
+        width: 99%;
       }
     }
 
     .button-container-schedule{
-      width: 90.5%;
+      width: 94%;
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+.container-schedule{
+  .container-schedule-detail{
+    width: 98%;
+      .button{
+        width: 94%;
+      }
+    }
+
+    .button-container-schedule{
+      width: 85%;
+    }
+  }
+}
+@media only screen and (max-width: 350px) {
+.container-schedule{
+  .container-schedule-detail{
+    width: 98%;
+      .button{
+        width: 83.5%;
+      }
+    }
+
+    .button-container-schedule{
+      width: 85%;
+    }
+  }
+}
+@media only screen and (max-width: 350px) {
+.container-schedule{
+  .container-schedule-detail{
+    width: 110%;
+      .button{
+        padding:10px;
+       /*  width: 8%; */
+      }
+    }
+    .button-container-schedule{
+      width: 77.5%;
+      font-size: 0.8rem;
     }
   }
 }

@@ -44,7 +44,38 @@ export default {
     width: 90%;  
     .container-empleo-p{
         p{
+        width: 98.5%;       
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px){
+  .container-empleo{
+    width: 90%;  
+    .container-empleo-p{
+        p{
+        width: 97%;  
+        font-size: 1.5rem;     
+      }
+    }
+  }
+}
+@media only screen and (max-width: 370px){
+  .container-empleo{
+    width: 82%;  
+    .container-empleo-p{
+        p{
         width: 95%;       
+      }
+    }
+  }
+}
+@media only screen and (max-width: 345px){
+  .container-empleo{
+    width: 82%;  
+    .container-empleo-p{
+        p{
+        width: 102%;       
       }
     }
   }

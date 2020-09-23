@@ -131,9 +131,54 @@ export default {
     .container-malla-description-detail {
       padding: 10px 20px 10px 20px;
       background: #EFEFEF;
-      width: 90.3%;
+      width: 96%;
       margin-bottom: 20px;
       border-radius: 10px;
+    }
+    .container-malla-description-detail1{
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 1024px){
+  .container-malla{
+    width: 90%;
+    .container-malla-description-detail {
+      width: 94.5%;
+    }
+    .container-malla-description-detail1{
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 532px){
+  .container-malla{
+    width: 90%;
+    .container-malla-description-detail {
+      width: 93%;
+    }
+    .container-malla-description-detail1{
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 490px){
+  .container-malla{
+    width: 90%;
+    .container-malla-description-detail {
+      width: 92%;
+    }
+    .container-malla-description-detail1{
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 400px){
+  .container-malla{
+    width: 83%;
+    .container-malla-description-detail {
+      background: #EFEFEF;
+      width: 89%;
     }
     .container-malla-description-detail1{
       display: none;
