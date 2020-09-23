@@ -18,7 +18,25 @@
     @include breakpointPasarela(sm){
         display: flex;
         flex-direction: column;
-        margin-left: 0px;
+        margin-left: 8%;
+    }
+     /*md resolution*/
+     @include breakpointPasarela(md){
+        display: flex;
+        flex-direction: column;
+        margin-left: 8%;
+    }
+     /*lg resolution*/
+     @include breakpointPasarela(lg){
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+    }
+    /*xl resolution*/
+    @include breakpointPasarela(xl){
+        display: flex;
+        flex-direction: column;
+        margin-left: 50%;
     }
 }
 
@@ -31,12 +49,35 @@
     width: 0%;
     /*xs resolution*/
     @include breakpointPasarela(xs){
-        padding: 0px 120px;
+        padding: 20px 126px 20px 10px;
+        white-space: nowrap;
+        margin-left: 20%;
     }
 
     /*sm resolution*/
     @include breakpointPasarela(sm){
-        padding: 0px 120px;
+        padding: 20px 126px 20px 10px;
+        white-space: nowrap;
+        margin-left: 20%;
+    }
+    /*md resolution*/
+    @include breakpointPasarela(md){
+        padding: 20px 126px 20px 10px;
+        white-space: nowrap;
+        margin-left: 20%;
+    }
+
+    /*lg resolution*/
+    @include breakpointPasarela(lg){
+        padding: 20px 126px 20px 10px;
+        white-space: nowrap;
+        margin-left: 20%;
+    }
+    /*xl resolution*/
+    @include breakpointPasarela(xl){
+        padding: 20px 126px 20px 10px;
+        white-space: nowrap;
+        margin-left: 20%;
     }
 }
 
@@ -44,12 +85,25 @@
     padding: 20px 20px 20px 20px;
     /*xs resolution*/
     @include breakpointPasarela(xs){
-        width: 140%;
+        width: 130%;
     }
 
     /*sm resolution*/
     @include breakpointPasarela(sm){
-        width: 140%;
+        width: 130%;
+    }
+    /*md resolution*/
+    @include breakpointPasarela(md){
+        width: 130%;
+    }
+
+    /*lg resolution*/
+    @include breakpointPasarela(lg){
+        width: 130%;
+    }
+    /*xl resolution*/
+    @include breakpointPasarela(xl){
+        width: 130%;
     }
 }
 .sectionprice1 {
@@ -64,6 +118,22 @@
 
     /*sm resolution*/
     @include breakpointPasarela(sm){
+        display: block;
+        margin-left: -10%;
+    }
+    /*md resolution*/
+    @include breakpointPasarela(md){
+        display: block;
+        margin-left: -10%;
+    }
+
+    /*lg resolution*/
+    @include breakpointPasarela(lg){
+        display: block;
+        margin-left: -18%;
+    }
+    /*xl resolution*/
+    @include breakpointPasarela(xl){
         display: block;
         margin-left: -10%;
     }
