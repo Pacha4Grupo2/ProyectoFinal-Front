@@ -27,13 +27,22 @@
     font-weight: bold;
     /*xs resolution*/
     @include breakpointPasarela(xs){
-        margin-left:-6%;
+        margin-left: 0%;
     }
 
     /*sm resolution*/
     @include breakpointPasarela(sm){
-        margin-left:-6%;
+        margin-left: 0%;
+	}
+	/*xs resolution*/
+    @include breakpointPasarela(md){
+        margin-left: 14%;
     }
+
+    /*sm resolution*/
+    @include breakpointPasarela(lg){
+        margin-left: 14%;
+	}
 }
 .view-summary section {
     margin-bottom: 15px;
@@ -42,11 +51,46 @@
 	display: grid;
 	grid-template-columns: 0.45fr 2.5fr 0.5fr;
 	grid-column-gap: 15px;
+	 /*xs resolution*/
+	 @include breakpointPasarela(xs){
+        grid-template-columns: 50% 28% 20% 20%;
+    }
+
+    /*sm resolution*/
+    @include breakpointPasarela(sm){
+        grid-template-columns: 50% 28% 20% 20%;
+	}
+	 /*md resolution*/
+	 @include breakpointPasarela(md){
+        grid-template-columns: 54% 20% 20% 20%;
+    }
+
+    /*lg resolution*/
+    @include breakpointPasarela(lg){
+        grid-template-columns: 52% 20% 20% 20%;
+	}
+	/*xl resolution*/
+    @include breakpointPasarela(xl){
+        grid-template-columns: 34% 17% 20% 20%;
+    }
 }
 .view-summary img {
 	height: 110px;
 	object-fit: cover;
 	border-radius: 7px;
+	 /*md resolution*/
+	 @include breakpointPasarela(md){
+        margin-left: 20%;
+    }
+
+    /*lg resolution*/
+    @include breakpointPasarela(lg){
+		margin-left: 10%;
+	}
+	/*xl resolution*/
+    @include breakpointPasarela(xl){
+		margin-left: 20%;
+    }
 }
 .view-summary p {
 	color: #5640ff;
@@ -76,5 +120,9 @@
         display: flex;
         flex-direction: column;
         margin-left: -15%;
+	}
+	 /*xl resolution*/
+	 @include breakpointPasarela(xl){
+        justify-content: center;
     }
 }
