@@ -2,13 +2,35 @@ export default {
     namespaced: true,
     state: {
         products: [],
+        producto: {
+            categoria: '',
+            descripcion: '',
+            descuento: '',
+            id: '',
+            igv: '',
+            imagen: '',
+            imagen_card: '',
+            nombre: '',
+            precio: '',
+        },
         errorLoaded: false,
         modal: false,
         backColor: false,
+        totalProducts: [],
+        tatalPrice: 0,
     },
     mutations: {
+        SET_TOTAL_PRICE(state) {
+            const total = state.totalProducts.reduce((num, { precio }) => {
+                return num + parseInt(precio);
+            }, 0);
+            state.tatalPrice = total;
+        },
         SET_PRODUCTS(state, products) {
             state.products = products;
+        },
+        SET_PRODUCTO(state, producto) {
+            state.producto = producto;
         },
         SET_ERROR_LOADED(state, stateError) {
             state.errorLoaded = stateError;
@@ -19,6 +41,35 @@ export default {
         },
         BACKCOLOR(state) {
             state.backColor = !state.backColor;
+        },
+        ADD_PRODUCT(state, product) {
+            const found = state.totalProducts.find(
+                (currentProduct) => currentProduct.id === product.id
+            );
+            const index = state.totalProducts
+                .map((currentProduct) => currentProduct.id)
+                .indexOf(product.id);
+
+            console.log('found', found);
+            console.log('index', index);
+
+            if (!found) {
+                product.total = 1;
+                state.totalProducts.push(product);
+            } else {
+                // console.log(" existe!!");
+                // state.totalProducts[index].total = state.totalProducts[index].total + 1;
+                // state.totalProducts = [...state.totalProducts];
+            }
+        },
+        REMOVE_PRODUCT(state, product) {
+            state.totalProducts = state.totalProducts.filter((currentProduct) => {
+                console.log(currentProduct.id);
+                return currentProduct.id !== product;
+            });
+            state.tatalPrice = state.totalProducts.reduce((num, { precio }) => {
+                return num + parseInt(precio);
+            }, 0);
         },
     },
     actions: {
@@ -40,6 +91,30 @@ export default {
         },
         getModalB({ commit }) {
             commit('MODALON');
+        },
+        addProduct({ commit }, product) {
+            commit('ADD_PRODUCT', product);
+        },
+        removeProduct({ commit }, product) {
+            commit('REMOVE_PRODUCT', product);
+        },
+        getPriceTotal({ commit }) {
+            commit('SET_TOTAL_PRICE');
+        },
+        eliminar({ commit }, producto) {
+            commit('REMOVE_PRODUCT', producto);
+        },
+        async getProducto({ commit }, id) {
+            try {
+                const producto = await fetch(
+                    `https://backendhackatonfinal.herokuapp.com/producto/${id}`
+                ).then((response) => response.json());
+                console.log('responsive', producto);
+                commit('SET_ERROR_LOADED', false);
+                commit('SET_PRODUCTO', producto);
+            } catch (error) {
+                commit('SET_ERROR_LOADED', true);
+            }
         },
     },
     modules: {},

@@ -1,186 +1,186 @@
 .contact-form-wrapper {
-  padding: 4vw;
-  right: 0px;
-  margin-top: 40px;
-  position: fixed;
-  top: 0px;
-  margin-right: calc((100vw - 1260px) / 2);
-  z-index: 1;
+    padding: 2vw 0;
+    right: 0px;
+    margin-top: 40px;
+    position: fixed;
+    top: 0px;
+    margin-right: calc((100vw - 1260px) / 2);
+    z-index: 1;
 }
 
 .contact-form-phone {
-  background-image: url('https://pachaqtec.edu.pe/images/phone.png');
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  width: 370px;
-  height: 600px;
+    background-image: url('https://pachaqtec.edu.pe/images/phone.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 370px;
+    height: 600px;
 }
 
 .contact-form-container-phone {
-  padding: 90px 72px;
-  position: relative;
-  height: 100%;
+    padding: 90px 72px;
+    position: relative;
+    height: 100%;
 }
 
 .form-title {
-  font-size: 18px;
-  color: #000425;
-  font-weight: 500;
-  opacity: 1;
+    font-size: 18px;
+    color: #000425;
+    font-weight: 500;
+    opacity: 1;
 }
 
 .contact-form-GridPhone {
-  display: grid;
-  gap: 13px;
-  padding-top: 20px;
+    display: grid;
+    gap: 13px;
+    padding-top: 20px;
 }
 
 .input-label {
-  color: rgb(0, 0, 0);
-  font-size: 12px;
-  font-weight: lighter;
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translate(0px, -50%);
-  opacity: 1;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: lighter;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0px, -50%);
+    opacity: 1;
 }
 
 .input-class {
-  height: 12px;
-  width: 88%;
-  border: 1px solid rgb(139, 144, 153);
-  border-radius: 6px;
-  padding: 16px 14px;
-  outline: none;
-  font-size: 12px;
-  background: none;
-  font-family: Roboto, sans-serif;
-  color: rgb(0, 0, 0);
+    height: 12px;
+    width: 88%;
+    border: 1px solid rgb(139, 144, 153);
+    border-radius: 6px;
+    padding: 16px 14px;
+    outline: none;
+    font-size: 12px;
+    background: none;
+    font-family: Roboto, sans-serif;
+    color: rgb(0, 0, 0);
 }
 
 .form-select {
-  font-size: 12px;
-  position: relative;
-  cursor: pointer;
+    font-size: 12px;
+    position: relative;
+    cursor: pointer;
 }
 
 .description {
-  height: 12px;
-  width: 91%;
-  padding: 15px 10px;
-  border: 1px solid rgb(139, 144, 153);
-  border-radius: 6px;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1LjQ0IiBoZWlnaHQ9IjQuMDIiIHZpZXdCb3g9IjAgMCA1LjQ0IDQuMDIiPgogIDxwYXRoIGlkPSJtdWx0aW1lZGlhIiBkPSJNMy45NjQsMi42MTMuMi4wMjNBLjEzLjEzLDAsMCwwLDAsLjEyOVY1LjMxYS4xMy4xMywwLDAsMCwuMi4xMDdMMy45NjQsMi44MjdhLjEyOS4xMjksMCwwLDAsMC0uMjEzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNS40NCkgcm90YXRlKDkwKSIgZmlsbD0iIzJiMmIyYiIvPgo8L3N2Zz4K);
-  background-repeat: no-repeat;
-  background-position: calc(100% - 12px) center;
-  font-size: 12px;
-  font-family: Roboto, sans-serif;
-  color: rgb(139, 144, 153);
+    height: 12px;
+    width: 91%;
+    padding: 15px 10px;
+    border: 1px solid rgb(139, 144, 153);
+    border-radius: 6px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1LjQ0IiBoZWlnaHQ9IjQuMDIiIHZpZXdCb3g9IjAgMCA1LjQ0IDQuMDIiPgogIDxwYXRoIGlkPSJtdWx0aW1lZGlhIiBkPSJNMy45NjQsMi42MTMuMi4wMjNBLjEzLjEzLDAsMCwwLDAsLjEyOVY1LjMxYS4xMy4xMywwLDAsMCwuMi4xMDdMMy45NjQsMi44MjdhLjEyOS4xMjksMCwwLDAsMC0uMjEzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNS40NCkgcm90YXRlKDkwKSIgZmlsbD0iIzJiMmIyYiIvPgo8L3N2Zz4K);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) center;
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    color: rgb(139, 144, 153);
 }
 
 .ul-class {
-  width: 88%;
-  height: fit-content;
-  background-color: rgb(255, 255, 255);
-  color: rgb(196, 196, 196);
-  position: absolute;
-  top: 40px;
-  left: 0px;
-  z-index: 1;
-  overflow: hidden;
-  max-height: 0px;
+    width: 88%;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    color: rgb(196, 196, 196);
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    z-index: 1;
+    overflow: hidden;
+    max-height: 0px;
 }
 
 .item-form-select {
-  height: 8px;
-  width: 88%;
-  padding: 12px 10px;
-  border-bottom: 1px solid rgb(139, 144, 153);
-  border-right: 1px solid rgb(139, 144, 153);
-  border-left: 1px solid rgb(139, 144, 153);
-  font-weight: 500;
-  color: rgb(0, 4, 37);
+    height: 8px;
+    width: 88%;
+    padding: 12px 10px;
+    border-bottom: 1px solid rgb(139, 144, 153);
+    border-right: 1px solid rgb(139, 144, 153);
+    border-left: 1px solid rgb(139, 144, 153);
+    font-weight: 500;
+    color: rgb(0, 4, 37);
 }
 
 .check-label {
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  font-family: Roboto, sans-serif;
-  font-size: 12px;
-  padding-top: 6px;
-  padding-bottom: 10px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    padding-top: 6px;
+    padding-bottom: 10px;
 }
 
 .check-input {
-  // appearance: none;
-  // background-color: white;
-  // border: 0.125rem solid rgb(128, 128, 128);
-  // border-radius: 3px;
-  // cursor: pointer;
-  // display: inline-block;
-  // height: 1.2rem;
-  // margin-right: 0.25rem;
-  // position: relative;
-  // transition: all 0.25s ease 0s;
-  // vertical-align: middle;
-  // width: 1.2rem;
-  background-image: url('/src/assets/images/Layer2.png');
+    // appearance: none;
+    // background-color: white;
+    // border: 0.125rem solid rgb(128, 128, 128);
+    // border-radius: 3px;
+    // cursor: pointer;
+    // display: inline-block;
+    // height: 1.2rem;
+    // margin-right: 0.25rem;
+    // position: relative;
+    // transition: all 0.25s ease 0s;
+    // vertical-align: middle;
+    // width: 1.2rem;
+    background-image: url('/src/assets/images/Layer2.png');
 }
 
 .button-submit-form {
-  background: rgb(86, 64, 255);
-  color: white;
-  border-radius: 6px;
-  height: 50px;
-  cursor: pointer;
-  text-align: center;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
-  bottom: 70px;
-  width: 225px;
-  margin-top: 20px;
-  font-size: 16px;
+    background: rgb(86, 64, 255);
+    color: white;
+    border-radius: 6px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    bottom: 70px;
+    width: 225px;
+    margin-top: 20px;
+    font-size: 16px;
 }
 
 @media only screen and (max-width: 1679px) {
-  .contact-form-wrapper {
-      padding: 4vw 0;
-      right: -60px;
-      margin-top: 40px;
-      position: fixed;
-      top: 0px;
-      margin-right: calc((100vw - 1260px) / 2);
-      z-index: 1;
-  }
+    .contact-form-wrapper {
+        padding: 4vw 0;
+        right: -60px;
+        margin-top: 40px;
+        position: fixed;
+        top: 0px;
+        margin-right: calc((100vw - 1260px) / 2);
+        z-index: 1;
+    }
 }
 
 @media only screen and (max-width: 1320px) {
-  .contact-form-wrapper {
-      padding: 4vw 0;
-      right: 18px;
-      margin-top: 40px;
-      position: fixed;
-      top: 0px;
-      margin-right: calc((100vw - 1260px) / 2);
-      z-index: 1;
-  }
+    .contact-form-wrapper {
+        padding: 4vw 0;
+        right: 18px;
+        margin-top: 40px;
+        position: fixed;
+        top: 0px;
+        margin-right: calc((100vw - 1260px) / 2);
+        z-index: 1;
+    }
 }
 
 @media only screen and (max-width: 1150px) {
-  .contact-form-wrapper {
-      display: none;
-      padding: 4vw 0;
-      right: 18px;
-      margin-top: 40px;
-      position: fixed;
-      top: 0px;
-      margin-right: calc((100vw - 1260px) / 2);
-      z-index: 1;
-  }
+    .contact-form-wrapper {
+        display: none;
+        padding: 4vw 0;
+        right: 18px;
+        margin-top: 40px;
+        position: fixed;
+        top: 0px;
+        margin-right: calc((100vw - 1260px) / 2);
+        z-index: 1;
+    }
 }

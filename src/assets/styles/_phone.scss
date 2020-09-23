@@ -5,11 +5,10 @@
     position: fixed;
     top: 0px;
     margin-right: calc((100vw - 1260px) / 2);
-    z-index: 1;
 }
 
 .contact-form-phone {
-    background-image: url('https://pachaqtec.edu.pe/images/phone.png');
+    background-image: url('/ProyectoFinal-Front/src/assets/phone.png');
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -24,7 +23,7 @@
 }
 
 .form-title {
-    font-size: 18px;
+    font-size: 16px;
     color: #000425;
     font-weight: 500;
     opacity: 1;
@@ -48,11 +47,12 @@
 }
 
 .input-class {
+    margin: 0;
     height: 12px;
     width: 88%;
     border: 1px solid rgb(139, 144, 153);
     border-radius: 6px;
-    padding: 16px 14px;
+    padding: 12px;
     outline: none;
     font-size: 12px;
     background: none;
@@ -68,7 +68,7 @@
 
 .description {
     height: 12px;
-    width: 91%;
+    width: 88%;
     padding: 15px 10px;
     border: 1px solid rgb(139, 144, 153);
     border-radius: 6px;
@@ -126,8 +126,10 @@
     // position: relative;
     // transition: all 0.25s ease 0s;
     // vertical-align: middle;
-    // width: 1.2rem;
-    background-image: url('/src/assets/images/Layer2.png');
+    margin: 0;
+    width: 20px;
+    margin: 0 10px;
+    background-image: url(/ProyectoFinal-Front/src/assets/Layer2.png);
 }
 
 .button-submit-form {
@@ -144,43 +146,5 @@
     align-items: center;
     bottom: 70px;
     width: 225px;
-    margin-top: 20px;
-    font-size: 16px;
-}
-
-@media only screen and (max-width: 1679px) {
-    .contact-form-wrapper {
-        padding: 4vw 0;
-        right: -60px;
-        margin-top: 40px;
-        position: fixed;
-        top: 0px;
-        margin-right: calc((100vw - 1260px) / 2);
-        z-index: 1;
-    }
-}
-
-@media only screen and (max-width: 1320px) {
-    .contact-form-wrapper {
-        padding: 4vw 0;
-        right: 18px;
-        margin-top: 40px;
-        position: fixed;
-        top: 0px;
-        margin-right: calc((100vw - 1260px) / 2);
-        z-index: 1;
-    }
-}
-
-@media only screen and (max-width: 1150px) {
-    .contact-form-wrapper {
-        display: none;
-        padding: 4vw 0;
-        right: 18px;
-        margin-top: 40px;
-        position: fixed;
-        top: 0px;
-        margin-right: calc((100vw - 1260px) / 2);
-        z-index: 1;
-    }
+    font-weight: bold;
 }
