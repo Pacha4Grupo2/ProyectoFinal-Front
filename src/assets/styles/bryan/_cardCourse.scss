@@ -24,7 +24,7 @@
                     top: 10px;
                     background: transparent;
                     color: red;
-                    z-index: 1;
+                    z-index: 0;
                     padding: 5px;
                     border: 1px solid red;
                     border-radius: 4px;
@@ -52,6 +52,10 @@
                         bottom: 15%;
                         left: 10%;
                         color: white;
+                        .router {
+                            text-decoration-line: none;
+                            color: white;
+                        }
                         .curso__ditail-button {
                             position: absolute;
                             left: 250px;
@@ -86,6 +90,9 @@
                                 font-size: 1.2rem;
                                 margin-bottom: 5px;
                             }
+                        }
+                        .curso-description:hover {
+                            color: red;
                         }
                     }
                 }

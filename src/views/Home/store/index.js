@@ -2,6 +2,17 @@ export default {
     namespaced: true,
     state: {
         products: [],
+        producto: {
+            categoria: '',
+            descripcion: '',
+            descuento: '',
+            id: '',
+            igv: '',
+            imagen: '',
+            imagen_card: '',
+            nombre: '',
+            precio: '',
+        },
         errorLoaded: false,
         modal: false,
         backColor: false,
@@ -17,6 +28,9 @@ export default {
         },
         SET_PRODUCTS(state, products) {
             state.products = products;
+        },
+        SET_PRODUCTO(state, producto) {
+            state.producto = producto;
         },
         SET_ERROR_LOADED(state, stateError) {
             state.errorLoaded = stateError;
@@ -89,6 +103,18 @@ export default {
         },
         eliminar({ commit }, producto) {
             commit('REMOVE_PRODUCT', producto);
+        },
+        async getProducto({ commit }, id) {
+            try {
+                const producto = await fetch(
+                    `https://backendhackatonfinal.herokuapp.com/producto/${id}`
+                ).then((response) => response.json());
+                console.log('responsive', producto);
+                commit('SET_ERROR_LOADED', false);
+                commit('SET_PRODUCTO', producto);
+            } catch (error) {
+                commit('SET_ERROR_LOADED', true);
+            }
         },
     },
     modules: {},

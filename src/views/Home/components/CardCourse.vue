@@ -6,35 +6,40 @@
 			</h2>
 			<div class="container-cursos__list">
 				<div class="curso" v-for="(product, index) in products" :key="index">
-					<button class="curso-add" @click.once="addProduct(product)">
-						AGREGAR
-					</button>
 					<figure>
 						<img :src="product.imagen_card" class="img-cursos" />
+						<button class="curso-add" @click.once="addProduct(product)">
+							AGREGAR
+						</button>
 						<div class="curso__ditail">
-							<div class="curso-description">
-								<p class="programa">PROGRAMA DE ESPECIALIZACIÓN EN</p>
-								<h3 class="curso__title">{{ product.nombre }}</h3>
-							</div>
-							<div class="curso__ditail-button">
-								<svg
-									class="imagen-mas"
-									xmlns="http://www.w3.org/2000/svg"
-									fill="#ffffff"
-									height="24"
-									width="24"
-									viewBox="0 0 24 24"
-								>
-									<rect opacity="0" width="24" height="24" />
-									<path
-										d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z"
-									/>
-									<path
-										d="M15,11H13V9a1,1,0,0,0-2,0v2H9a1,1,0,0,0,0,2h2v2a1,1,0,0,0,2,0V13h2a1,1,0,0,0,0-2Z"
-									/>
-								</svg>
-								<p>Ver más</p>
-							</div>
+							<router-link
+								class="router"
+								:to="{ name: 'curso', params: { id: product.id } }"
+							>
+								<div class="curso-description">
+									<p class="programa">PROGRAMA DE ESPECIALIZACIÓN EN</p>
+									<h3 class="curso__title">{{ product.nombre }}</h3>
+								</div>
+								<div class="curso__ditail-button">
+									<svg
+										class="imagen-mas"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="#ffffff"
+										height="24"
+										width="24"
+										viewBox="0 0 24 24"
+									>
+										<rect opacity="0" width="24" height="24" />
+										<path
+											d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z"
+										/>
+										<path
+											d="M15,11H13V9a1,1,0,0,0-2,0v2H9a1,1,0,0,0,0,2h2v2a1,1,0,0,0,2,0V13h2a1,1,0,0,0,0-2Z"
+										/>
+									</svg>
+									<p>Ver más</p>
+								</div>
+							</router-link>
 						</div>
 					</figure>
 				</div>

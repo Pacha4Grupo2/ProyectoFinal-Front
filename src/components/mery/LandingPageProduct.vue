@@ -2,17 +2,18 @@
 	<div class="container-landing">
 		<div class="container-landing__detail">
 			<figure class="container-img__landing">
-				<img class="landing" src="@/assets/images/backendbanner.png" alt="" />
+				<img class="landing" :src="producto.imagen" alt="" />
 			</figure>
 			<div class="landing-text">
-        <h3>ESPECIALÍZATE EN</h3>
-				<h1 class="h1" id="h1">
-					DESARROLLO <br>BACK-END
-				</h1>
+				<h3>ESPECIALÍZATE EN</h3>
+				<h1 class="h1m" id="h1">{{ producto.nombre }}</h1>
 			</div>
 		</div>
 		<div class="respaldo">
-      <h3>Construye los algoritmos y desarrolla la lógica detrás del funcionamiento de webs y aplicaciones web.</h3>
+			<h3>
+				Construye los algoritmos y desarrolla la lógica detrás del
+				funcionamiento de webs y aplicaciones web.
+			</h3>
 			<h2>Con el respaldo de:</h2>
 			<figure class="container-img__respaldo">
 				<svg
@@ -131,8 +132,27 @@
 </template>
 
 <script>
+import { mapActions, mapState } from 'vuex';
 export default {
 	name: 'LadingPageProduct',
+	data() {
+		return {
+			id: this.$route.params.id,
+		};
+	},
+	methods: {
+		...mapActions({
+			getProducto: 'HomeStore/getProducto',
+		}),
+	},
+	created() {
+		this.getProducto(this.id);
+	},
+	computed: {
+		...mapState({
+			producto: (state) => state.HomeStore.producto,
+		}),
+	},
 };
 </script>
 

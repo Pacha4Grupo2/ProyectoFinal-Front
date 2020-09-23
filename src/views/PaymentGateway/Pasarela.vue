@@ -16,22 +16,22 @@
 					<div class="shoppingcar">
 						<ShoppingCart />
 					</div>
-					
+
 					<div class="sectionprice">
-						<hr>
+						<hr />
 						<div class="sectionprice1 d-flex justify-between">
 							<h3>Precio final</h3>
-							<h3>s/600.00</h3>
+							<h3>S/. {{ totalPrice }}</h3>
 						</div>
 					</div>
-				</div>	
-
+				</div>
 			</section>
 		</div>
 	</div>
 </template>
 
 <script>
+import { mapState } from 'vuex';
 import ShoppingCart from '@/views/PaymentGateway/ShoppingCart';
 import HeaderPagos from '@/views/PaymentGateway/HeaderPagos';
 export default {
@@ -40,11 +40,15 @@ export default {
 		ShoppingCart,
 		HeaderPagos,
 	},
+	computed: {
+		...mapState({
+			totalPrice: (state) => state.HomeStore.tatalPrice,
+		}),
+	},
 };
 </script>
 
 <style lang="scss" scoped>
-
 // .container-pasarela {
 // 	margin-left: 50px;
 // }
