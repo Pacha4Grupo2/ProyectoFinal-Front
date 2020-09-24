@@ -86,6 +86,7 @@ export default {
 .view-summary h2 {
 	/* Box-model */
 	margin-bottom: 15px;
+	padding-left: 20px;
 	/*Tipografía*/
 	font-family: 'Poppins';
 	color: #222222;
@@ -113,11 +114,13 @@ export default {
 	height: 110px;
 	object-fit: cover;
 	border-radius: 7px;
+	margin-left: 20px;
 }
 .view-summary p {
 	color: #5640ff;
 	font-weight: bold;
 	font-size: 1.1rem;
+	padding-left: 20px;
 }
 .totalprice {
 	display: grid;

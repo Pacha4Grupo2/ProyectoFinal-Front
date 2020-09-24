@@ -78,7 +78,7 @@
 .sectionprice h3{
 	font-size: 2.0rem;
 	color: #5640ff;
-  font-weight: bold;
+     font-weight: bold;
 }
 .sectionprice input{
 	/* Box-model */
@@ -94,9 +94,11 @@
 	font-weight: bold;
 }
 .sectionprice1{
-	padding:0px 50px 0 40px;
+    padding:0px 0px 0 40px;
+    max-width: 85%;
     margin-top: 20px;
     display: flex;
+    border: none;
     @include breakpointPasarela(xs){
         padding-left: 0px;
         width:94%;
@@ -108,6 +110,6 @@
     }
 }
 hr{
-		color: rgb(109, 105, 105);
+	color: rgb(109, 105, 105);
     max-width: 88%;
 }
