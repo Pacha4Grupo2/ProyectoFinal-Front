@@ -19,14 +19,19 @@
 
 <script>
 import SocialMediaDiv from "./components/SocialMediaDiv";
+import { mapActions } from "vuex";
 export default {
   name: "AuthRegister",
   components: {
     SocialMediaDiv,
   },
+  methods: {
+    ...mapActions({
+      postRegister: "AuthStore/postRegister",
+    }),
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-
 </style>
