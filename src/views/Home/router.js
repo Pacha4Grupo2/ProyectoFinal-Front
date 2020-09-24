@@ -1,6 +1,6 @@
 export default {
     path: '',
-    name: 'home-layout',
+    name: 'Home-layout',
     component: () =>
         import ('./HomeLayout.vue'),
     children: [{
