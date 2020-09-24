@@ -78,7 +78,6 @@ export default {
                 const products = await fetch(
                     'https://backendhackatonfinal.herokuapp.com/producto/'
                 ).then((response) => response.json());
-                console.log('responsive', products);
                 commit('SET_ERROR_LOADED', false);
                 commit('SET_PRODUCTS', products);
             } catch (error) {
@@ -109,7 +108,6 @@ export default {
                 const producto = await fetch(
                     `https://backendhackatonfinal.herokuapp.com/producto/${id}`
                 ).then((response) => response.json());
-                console.log('responsive', producto);
                 commit('SET_ERROR_LOADED', false);
                 commit('SET_PRODUCTO', producto);
             } catch (error) {
