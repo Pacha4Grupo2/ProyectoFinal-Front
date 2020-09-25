@@ -6,10 +6,25 @@
 				<h4>S/. {{ totalPrice }}</h4>
 			</div>
 			<div class="dsct-container">
-				<input type="text" placeholder="Agrega un código de descuento" />
-				<button>
+				<input
+					type="text"
+					placeholder="Agrega un código de descuento"
+					v-model="cupon"
+					v-if="!cuponActive"
+				/>
+				<small class="deserror" v-if="errorLoaded">
+					el codigo ingrado es incorrecto
+				</small>
+				<input
+					type="text"
+					placeholder="Eliminar Cupon"
+					v-model="cupon"
+					v-if="cuponActive"
+				/>
+				<button v-if="!cuponActive" @click="getCupon(cupon)">
 					<img src="@/assets/images/enviar.png" />
 				</button>
+				<button v-if="cuponActive" @click="eliminarCupon">X</button>
 			</div>
 			<button class="button">Continuar</button>
 		</div>
@@ -20,15 +35,24 @@
 import { mapState, mapActions } from 'vuex';
 export default {
 	name: 'ShoppingCartTotal',
+	data() {
+		return {
+			cupon: '',
+		};
+	},
 	computed: {
 		...mapState({
-			totalPrice: (state) => state.HomeStore.tatalPrice,
+			totalPrice: (state) => state.HomeStore.totalPrice,
+			cuponActive: (state) => state.HomeStore.cuponActive,
+			errorLoaded: (state) => state.HomeStore.errorLoaded,
 		}),
 	},
 
 	methods: {
 		...mapActions({
 			getPriceTotal: 'HomeStore/getPriceTotal',
+			getCupon: 'HomeStore/getCupon',
+			eliminarCupon: 'HomeStore/eliminarCupon',
 		}),
 	},
 	mounted() {
