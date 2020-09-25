@@ -21,7 +21,7 @@
 
 		<section>
 			<h2>Ingresa la información de tu tarjeta</h2>
-			<div class="">
+			<div class="number-container">
 				<div class="card-container1">
 					<input
 						class="card-container-name"
@@ -32,7 +32,7 @@
 						required
 					/>
 					<input
-						id="debit-card-number"
+						class="debit-card-number"
 						name="cardnumber"
 						type="number"
 						placeholder="Número de tarjeta"
@@ -79,9 +79,10 @@
 			</div>
 		</section>
 
-		<section class="d-flex">
+		<section class="factura d-flex">
 			<h2>Solicitar factura</h2>
-			<p>ÍCONO</p>
+			<button>Sí</button>
+			<button>No</button>			
 		</section>
 
 		<section class="button-container">
@@ -90,78 +91,15 @@
 		</section>
 	</div>
 </template>
+
 <script>
 export default {
 	name: 'DebitCard',
 };
 </script>
 
-<style lang="scss" scoped>
-.view-debit-card h2 {
-	/* Box-model */
-	margin-bottom: 15px;
-	margin-right: 20px;
-	/*Tipografía*/
-	font-family: 'Poppins';
-	color: #222222;
-	font-size: 1.4rem;
-	font-weight: bold;
-}
-.view-debit-card section {
-	margin-bottom: 15px;
-}
-.view-debit-card input {
-	/* Box-model */
-	padding: 10px 10px;
-	border-radius: 4px;
-	margin: 0 0px 20px 0;
-	border-color: darkgrey;
+<style lang="scss" >
+@import '@/assets/styles/_debitCard.scss';
 
-	/*Tipografía*/
-	font-family: 'roboto';
-	font-size: 1.1rem;
-	font-weight: bold;
-}
-
-.view-debit-card button {
-	width: 97%;
-	padding: 15px 0;
-}
-.view-debit-card p,
-.card-container-number input {
-	color: red;
-	font-weight: bold;
-}
-.id-container,
-.card-container,
-.button-container,
-.card-container1,
-.card-container-number {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 10px;
-}
-.card-container-date,
-.quotas {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-	grid-column-gap: 20px;
-}
-.quotas button {
-	margin: 0 40px 10px 0;
-	width: 100%;
-	border-radius: 10px;
-	background-color: rgb(223, 219, 219);
-	border: darkgrey;
-	color: #000425;
-	font-weight: bold;
-
-	&:hover {
-		background-color: #5640ff;
-	}
-}
-.active {
-	background-color: #5640ff;
-	color: white;
-}
 </style>
+

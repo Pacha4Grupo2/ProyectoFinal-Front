@@ -1,144 +1,153 @@
-@import 'mixings';
-.view-checkout h2 {
-	/*Tipografía*/
-	font-family: 'Poppins';
-	color: #000425;
-	font-size: 1.9rem;
+.view-checkout {
+	.checkout {
+		.sectionprice-checkout {
+            padding: 55px 80px;
+            border: solid 1px grey;
+			h2 {
+				/*Tipografía*/
+				font-family: 'Poppins';
+				color: #000425;
+				font-size: 2.8rem;
+                margin-bottom: 25px;
+                font-weight: bold;
+			}
+			h4{
+				margin-bottom: 25px;
+                font-size: 2.5rem;                
+			}
+			.button {
+				/*Box-model*/
+				padding: 15px 10px;
+				margin-right: 5px;
+				border: #5640ff;
+				font-weight: bold;
+                width: 100%;
+                font-size: 2.2rem;
+		    }
+		}
+	}
 }
-
-.view-checkout{
-    /*xs resolution*/
-    @include breakpointPasarela(xs){
-        display: flex;
-        flex-direction: column;
-        margin-left: 0px;
-    }
-
-    /*sm resolution*/
-    @include breakpointPasarela(sm){
-        display: flex;
-        flex-direction: column;
-        margin-left: 8%;
-    }
-     /*md resolution*/
-     @include breakpointPasarela(md){
-        display: flex;
-        flex-direction: column;
-        margin-left: 8%;
-    }
-     /*lg resolution*/
-     @include breakpointPasarela(lg){
-        display: flex;
-        flex-direction: column;
-        margin-left: 15%;
-    }
-    /*xl resolution*/
-    @include breakpointPasarela(xl){
-        display: flex;
-        flex-direction: column;
-        margin-left: 50%;
-    }
-}
-
-.view-checkout .button-checkout {
-	/*Box-model*/
-	padding: 15px 120px;
-	margin-right: 5px;
-	border: #5640ff;
-	font-weight: bold;
-    width: 0%;
-    /*xs resolution*/
-    @include breakpointPasarela(xs){
-        padding: 20px 126px 20px 10px;
-        white-space: nowrap;
-        margin-left: 20%;
-    }
-
-    /*sm resolution*/
-    @include breakpointPasarela(sm){
-        padding: 20px 126px 20px 10px;
-        white-space: nowrap;
-        margin-left: 20%;
-    }
-    /*md resolution*/
-    @include breakpointPasarela(md){
-        padding: 20px 126px 20px 10px;
-        white-space: nowrap;
-        margin-left: 20%;
-    }
-
-    /*lg resolution*/
-    @include breakpointPasarela(lg){
-        padding: 20px 126px 20px 10px;
-        white-space: nowrap;
-        margin-left: 20%;
-    }
-    /*xl resolution*/
-    @include breakpointPasarela(xl){
-        padding: 20px 126px 20px 10px;
-        white-space: nowrap;
-        margin-left: 20%;
+@media only screen and (max-width: 1210px) {
+    .view-checkout {
+        .checkout {
+            .sectionprice-checkout {
+                padding: 55px 55px;
+                border: solid 1px grey;
+                h2 {
+                    /*Tipografía*/
+                    font-family: 'Poppins';
+                    color: #000425;
+                    font-size: 2.8rem;
+                    margin-bottom: 25px;
+                    font-weight: bold;
+                }
+                h4{
+                    margin-bottom: 25px;
+                    font-size: 2.1rem;                
+                }
+                .button {
+                    /*Box-model*/
+                    padding: 15px 10px;
+                    margin-right: 5px;
+                    border: #5640ff;
+                    font-weight: bold;
+                    width: 100%;
+                    font-size: 2rem;
+                }
+            }
+        }
     }
 }
-
-.checkout {
-    padding: 20px 20px 20px 20px;
-    /*xs resolution*/
-    @include breakpointPasarela(xs){
-        width: 130%;
-    }
-
-    /*sm resolution*/
-    @include breakpointPasarela(sm){
-        width: 130%;
-    }
-    /*md resolution*/
-    @include breakpointPasarela(md){
-        width: 130%;
-    }
-
-    /*lg resolution*/
-    @include breakpointPasarela(lg){
-        width: 130%;
-    }
-    /*xl resolution*/
-    @include breakpointPasarela(xl){
-        width: 130%;
-    }
-}
-.sectionprice-checkout {
-	padding: 50px 30px 50px 30px;
-	max-width: 70%;
-    border: solid 1px rgb(86, 88, 86);
-    /*xs resolution*/
-    @include breakpointPasarela(xs){
-        display: block;
-        margin-left: -10%;
-    }
-
-    /*sm resolution*/
-    @include breakpointPasarela(sm){
-        display: block;
-        margin-left: -10%;
-    }
-    /*md resolution*/
-    @include breakpointPasarela(md){
-        display: block;
-        margin-left: -10%;
-    }
-
-    /*lg resolution*/
-    @include breakpointPasarela(lg){
-        display: block;
-        margin-left: -18%;
-    }
-    /*xl resolution*/
-    @include breakpointPasarela(xl){
-        display: block;
-        margin-left: -10%;
+@media only screen and (max-width: 1156px) {
+    .view-checkout {
+        .checkout {
+            .sectionprice-checkout {
+                padding: 55px 50px;
+                border: solid 1px grey;
+                h2 {
+                    /*Tipografía*/
+                    font-family: 'Poppins';
+                    color: #000425;
+                    font-size: 2.6rem;
+                    margin-bottom: 25px;
+                    font-weight: bold;
+                }
+                h4{
+                    margin-bottom: 25px;
+                    font-size: 1.9rem;                
+                }
+                .button {
+                    /*Box-model*/
+                    padding: 15px 10px;
+                    margin-right: 5px;
+                    border: #5640ff;
+                    font-weight: bold;
+                    width: 100%;
+                    font-size: 1.8rem;
+                }
+            }
+        }
     }
 }
-.view-checkout h4 {
-	margin-bottom: 25px;
-	font-size: 1.6rem;
+@media only screen and (max-width: 500px) {
+    .view-checkout {
+        .checkout {
+            .sectionprice-checkout {
+                padding: 55px 50px;
+                border: solid 1px grey;
+                h2 {
+                    /*Tipografía*/
+                    font-family: 'Poppins';
+                    color: #000425;
+                    font-size: 2.2rem;
+                    margin-bottom: 25px;
+                    font-weight: bold;
+                }
+                h4{
+                    margin-bottom: 25px;
+                    font-size: 1.6rem;                
+                }
+                .button {
+                    /*Box-model*/
+                    padding: 15px 10px;
+                    margin-right: 5px;
+                    border: #5640ff;
+                    font-weight: bold;
+                    width: 100%;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 323px) {
+    .view-checkout {
+        .checkout {
+            .sectionprice-checkout {
+                padding: 55px 50px;
+                border: solid 1px grey;
+                h2 {
+                    /*Tipografía*/
+                    font-family: 'Poppins';
+                    color: #000425;
+                    font-size: 2rem;
+                    margin-bottom: 25px;
+                    font-weight: bold;
+                }
+                h4{
+                    margin-bottom: 25px;
+                    font-size: 1.4rem;                
+                }
+                .button {
+                    /*Box-model*/
+                    padding: 15px 10px;
+                    margin-right: 5px;
+                    border: #5640ff;
+                    font-weight: bold;
+                    width: 100%;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
 }
