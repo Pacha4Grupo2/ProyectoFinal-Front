@@ -7,31 +7,41 @@
       h4 {
         color: #5640ff;
         font-weight: bold;
-        font-size: 3rem;
+        font-size: 2.8rem;
       }
     }
     .dsct-container{
       border: solid 2px grey;
       padding: 10px 0;
       margin-bottom: 20px;
-      border-radius: 8px;       
+      border-radius: 8px;
+      justify-content: space-around;       
       input {
         /* Box-model */
         padding: 10px 10px;
         border-radius: 4px;
         border: none;
         width: 74%;
+        
         /*Tipografía*/
         font-family: 'roboto';
         font-size: 1.5rem;
         font-weight: bold;
       }
-      img{
-        padding-top: 5px;
-      }
+      button{
+        border: none;
+        outline: none;
+        background-color: white;
+        cursor: pointer;
+        img{
+          border: none;
+          padding-top: 5px;
+        }
+      }  
     }
     .button {
-      padding: 10px 0;
+      padding: 20px 0;
+      letter-spacing: 1.5px;      
     }
   }
 }
@@ -43,7 +53,7 @@
       .section2-price {
         margin-bottom: 15px;
         h4 {
-          font-size: 3rem;
+          font-size: 2.8rem;
           margin-bottom: 20px;
         }
       }
@@ -70,7 +80,7 @@
       }
       .button {
         padding: 20px 0;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         letter-spacing: 1.5px;
       }
     }
@@ -84,7 +94,7 @@
       .section2-price {
         margin-bottom: 15px;
         h4 {
-          font-size: 3rem;
+          font-size: 2.8rem;
           margin-bottom: 20px;
         }
       }
@@ -111,7 +121,7 @@
       }
       .button {
         padding: 20px 0;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         letter-spacing: 1.5px;
       }
     }
@@ -125,7 +135,7 @@
       .section2-price {
         margin-bottom: 15px;
         h4 {
-          font-size: 2.7rem;
+          font-size: 2.6rem;
           margin-bottom: 20px;
         }
       }
@@ -152,7 +162,7 @@
       }
       .button {
         padding: 20px 0;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         letter-spacing: 1.5px;
       }
     }
@@ -193,7 +203,7 @@
       }
       .button {
         padding: 20px 0;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         letter-spacing: 1.5px;
       }
     }
@@ -234,7 +244,7 @@
       }
       .button {
         padding: 20px 0;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         letter-spacing: 1.5px;
       }
     }
@@ -375,8 +385,8 @@
       }
       .button {
         padding: 20px 0;
-        font-size: 1.7rem;
         letter-spacing: 1.5px;
+        font-size: 1.7rem;        
       }
     }
   }  

@@ -90,13 +90,13 @@
 				<button>06</button>
 				<button>12</button>
 				<button>24</button>
-			</div>
+			</div><br><br>
 		</section>
 
 		<section class="factura d-flex">
 			<h2>Solicitar factura</h2>
-			<button>Sí</button>
-			<button>No</button>			
+			<button>No</button>
+			<button>Sí</button>			
 		</section>
 
 		<section class="button-container">
