@@ -15,7 +15,7 @@
 						<h2>{{ producto.nombre }}</h2>
 						<p>Dto. {{ producto.descuento }}%</p>
 					</div>
-					<button class="btn-eliminar" @click="eliminar(producto.id)">
+					<button class="btn-eliminar" @click="confirmDelete(producto.id)">
 						Eliminar
 					</button>
 				</div>

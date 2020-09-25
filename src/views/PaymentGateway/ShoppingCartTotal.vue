@@ -7,7 +7,9 @@
 			</div>
 			<div class="dsct-container">
 				<input type="text" placeholder="Agrega un código de descuento" />
-				<img src="@/assets/images/enviar.png" />
+				<button>
+					<img src="@/assets/images/enviar.png" />
+				</button>
 			</div>
 			<button class="button">Continuar</button>
 		</div>
