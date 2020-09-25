@@ -21,7 +21,7 @@
         border-radius: 4px;
         margin: 0 0px 20px 0;
         border-color: darkgrey;
-      
+        outline: none;      
         /*Tipografía*/
         font-family: 'roboto';
         font-size: 1.5rem;
@@ -39,7 +39,7 @@
           border-radius: 4px;
           margin: 0 0px 20px 0;
           border-color: darkgrey;
-        
+          outline: none;        
           /*Tipografía*/
           font-family: 'roboto';
           font-size: 1.5rem;
@@ -64,7 +64,7 @@
            border-radius: 4px;
            margin: 0 0px 20px 0;
            border-color: darkgrey;
-         
+           outline: none;         
            /*Tipografía*/
            font-family: 'roboto';
            font-size: 1.5rem;
@@ -78,25 +78,7 @@
       }
     }   
   }
-  .quotas{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-    grid-column-gap: 20px;    
-    button {
-      margin: 0 40px 10px 0;
-      width: 100%;
-      border-radius: 10px;
-      background-color: rgb(223, 219, 219);
-      border: darkgrey;
-      color: #000425;
-      font-weight: bold;
-  
-      &:hover {
-        background-color: #5640ff;
-        color: white;
-      }  
-    }
-  }
+
   .factura{
     button{
       width: 5%;
@@ -106,18 +88,24 @@
       border-radius: 10px;
       background-color: rgb(223, 219, 219);
       border: darkgrey;
-  
+      outline: none; 
+      padding: 13px;
+      padding-right: 30px;;        
       &:hover {
         background-color: #f81212;
         color: white;
       }
     }
   }  
-  
-  button {
-    width: 97%;
-    padding: 15px 0;
-  }
+  .button-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px; 
+    button {
+      width: 100%;
+      padding: 15px 0;
+    }
+  }  
 }
 
 

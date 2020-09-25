@@ -2,9 +2,8 @@
   <div class="layout-cart">
 		<div class="layout-cart-title">
 			<section class="d-flex">
-				<img
-					src="https://img.icons8.com/ios-filled/50/000000/long-arrow-left.png"/>
-				<h1>Carrito de compras</h1>
+        <img src="https://img.icons8.com/ios-filled/50/000000/long-arrow-left.png"/>           
+        <h1>Carrito de compras</h1>     
 			</section>
     </div>  
 

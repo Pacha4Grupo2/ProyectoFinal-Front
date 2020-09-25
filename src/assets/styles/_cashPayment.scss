@@ -38,25 +38,28 @@
 	.button-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 10px;
 		button {
 			width: 95%;
 			padding: 15px 0;
 		}	
 	}
-	.factura{
-		button{
-			width: 10%;
-			margin-right:8px;
-			color: #000425;
-			font-weight: bold;
-			border-radius: 10px;
-			background-color: rgb(223, 219, 219);
-			border: darkgrey;
-	
-			&:hover {
-				background-color: #f81212;
-				color: white;
-			}
-		}
-	}
+  .factura{
+    button{
+      width: 5%;
+      margin-right:8px;
+      color: #000425;
+      font-weight: bold;
+      border-radius: 10px;
+      background-color: rgb(223, 219, 219);
+      border: darkgrey;
+      outline: none; 
+      padding: 13px;
+      padding-right: 30px;;      
+      &:hover {
+        background-color: #f81212;
+        color: white;
+      }
+    }
+  } 
 }
