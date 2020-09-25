@@ -42,7 +42,7 @@ export default {
 	/*Tipografía*/
 	font-family: 'Poppins';
 	color: #222222;
-	font-size: 1.5rem;
+	font-size: 1.9rem;
 	font-weight: bold;
 	}
 }

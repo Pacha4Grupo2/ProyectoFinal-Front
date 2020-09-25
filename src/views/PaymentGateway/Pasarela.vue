@@ -1,13 +1,13 @@
 <template>
 	<div class="view-pasarela">
 		<div class="container-pasarela">
-			<div class="container-iconPagos">
+			<div class="container-iconPagos d-flex">
 				<img
 					src="https://img.icons8.com/ios-filled/50/000000/long-arrow-left.png"
 				/>
 				<h1>Pasarela de pagos</h1>
 			</div>
-			<section class="d-flex justify-between column">
+			<section class="container-main">
 				<div class="container-headerpagos">
 					<HeaderPagos />
 					<router-view></router-view>

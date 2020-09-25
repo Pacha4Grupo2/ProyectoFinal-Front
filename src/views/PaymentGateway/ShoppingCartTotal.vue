@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="view-shopping-cart-total">
     <section class="section2">
       <div class="section2-container d-flex flex-column">
@@ -11,6 +12,21 @@
       </div>
     </section>
   </div>
+=======
+	<div class="view-shopping-cart-total">
+		<div class="section2-container d-flex flex-column">
+			<div class="section2-price d-flex justify-between">
+				<h4>Subtotal</h4>
+				<h4>S/. {{ totalPrice }}</h4>
+			</div>
+			<div class="dsct-container">
+				<input type="text" placeholder="Agrega un código de descuento" />
+				<img src="@/assets/images/enviar.png">				
+			</div>	
+			<button class="button">Continuar</button>
+		</div>
+	</div>
+>>>>>>> 1f392bf2c0cfd9c1f935d4ffaed3b40396b6efda
 </template>
 
 <script>
@@ -34,6 +50,7 @@ export default {
 };
 </script>
 
+<<<<<<< HEAD
 <style scoped>
 .view-shopping-cart-total input {
   /* Box-model */
@@ -63,4 +80,9 @@ export default {
 .button {
   padding: 10px 0;
 }
+=======
+<style lang='scss'>
+@import '@/assets/styles/_shoppingCartTotal.scss';
+
+>>>>>>> 1f392bf2c0cfd9c1f935d4ffaed3b40396b6efda
 </style>

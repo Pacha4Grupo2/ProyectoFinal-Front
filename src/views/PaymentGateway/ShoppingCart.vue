@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="view-shopping-cart">
     <div class="d-flex">
       <section class="section1">
@@ -20,6 +21,31 @@
       </section>
     </div>
   </div>
+=======
+	<div class="view-shopping-cart">
+		<div class="shopping-cart-detail">
+
+				<article class="shopping-cart-detail__container" v-for="producto in totalProducts" :key="producto.id">
+					<img :src="producto.imagen_card" />
+
+					<div class="shopping-cart-detail__container__description d-flex flex-column justify-between">
+						<div class="shopping-cart-detail__container__description__title">
+							<h2>{{ producto.nombre }}</h2>
+							<p>Dto. {{ producto.descuento }}%</p>
+						</div>
+						<button class="btn-eliminar" @click="eliminar(producto.id)">
+							Eliminar
+						</button>
+					</div>
+
+					<div class="shopping-cart-detail__container__price">
+						<h3>S/. {{ producto.precio }}</h3>
+					</div>
+				</article>
+
+		</div>
+	</div>
+>>>>>>> 1f392bf2c0cfd9c1f935d4ffaed3b40396b6efda
 </template>
 
 <script>
@@ -52,6 +78,7 @@ export default {
 };
 </script>
 
+<<<<<<< HEAD
 <style scoped>
 .btn-eliminar {
   border-radius: 10px;
@@ -133,4 +160,8 @@ export default {
 .shopping-cart-title {
   margin-bottom: 28px;
 }
+=======
+<style lang='scss'>
+@import '@/assets/styles/_shoppingCartDetail.scss';
+>>>>>>> 1f392bf2c0cfd9c1f935d4ffaed3b40396b6efda
 </style>
