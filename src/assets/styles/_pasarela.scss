@@ -90,18 +90,12 @@
                 }
             }
             .container-main{
-/*                 display: flex;
-                flex-direction: column-reverse; */
                 .sectionprice{
-/*                     margin-bottom: 50px; */
                     h3{
                         font-size: 2.3rem;
                         font-weight: bold;
                         color: #5640ff;
                     }             
-                }
-                .shoppingcar{
-/*                     padding-top: 10px; */
                 }
             } 
         }
@@ -121,24 +115,9 @@
                     max-height: 28px;
                 }
             }
-            .container-main{
-/*                 display: flex;
-                flex-direction: column-reverse; */
-                .sectionprice{
-/*                     margin-bottom: 50px; */
-                    h3{
-/*                         font-size: 2.5rem;
-                        font-weight: bold;
-                        color: #5640ff; */
-                    }             
-                }
-                .shoppingcar{
-/*                     padding-top: 10px; */
-                }
-            } 
         }
-    }	
-}
+    }
+}            
 @media only screen and (max-width: 530px) {
     .view-pasarela{
         padding: 100px 30px;
@@ -153,31 +132,6 @@
                     max-height: 28px;
                 }
             }
-            .container-main{
-/*                 display: flex;
-                flex-direction: column-reverse; */
-                .sectionprice{
-/*                     margin-bottom: 50px; */
-                    h3{
-/*                         font-size: 2.5rem;
-                        font-weight: bold;
-                        color: #5640ff; */
-                    }             
-                }
-                .shoppingcar{
-/*                     padding-top: 10px; */
-                }
-            } 
         }
-    }	
+    }      
 }
-
-
-
-
-
-
-
-
-
-
