@@ -1,4 +1,4 @@
-.form-div {
+.formSocial-div {
   text-align: center;
   padding: 20px;
 
@@ -21,4 +21,16 @@
 
 .iconfb {
   padding: 12px 14px;
+}
+
+@media (max-width: 764px) {
+  .formSocial-div {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 660px) {
+  .formSocial-div {
+    padding: 20px;
+  }
 }

@@ -70,13 +70,29 @@
   }
 }
 
-@media (max-width: 715px) {
+@media (max-width: 764px) {
   .formAuth-login {
-    padding: 20px;
+    padding: 5px;
     text-align: center;
+    height: 60%;
   }
   
   .btn-enterA {
-    width: 94%;
+    width: 92%;
+  }
+
+  .formLogin-content {
+    height: 90%;
+  }
+
+}
+
+@media (max-width: 660px) {
+  .formLogin-content {
+    height: 85%;
+  }
+
+  .formAuth-login {
+    height: 65%;
   }
 }

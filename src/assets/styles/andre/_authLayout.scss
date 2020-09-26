@@ -82,6 +82,10 @@
   border-bottom: 1px solid #bfbfbf;
 }
 
+.logo-auth-tab {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .tabA {
     padding: 17px;
@@ -95,10 +99,20 @@
   }
 }
 
-@media (max-width: 715px) {
+@media (max-width: 764px) {
+  .tabA-component {
+    background-color: #000425;
+  }
+
   .tabA {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     padding: 18px;
+    color: #fff;
+    margin-left: 20px;
+  }
+
+  .router-link-active .tabA {
+    border-bottom: 3px solid #fff;
   }
 
   .banner-auth {
@@ -107,5 +121,24 @@
 
   .containerA-form {
     width: 100%;
+  }
+
+  .logo-auth-tab {
+    display: block;
+    padding-top: 15px;
+    margin-left: 20px;
+    width: 110px;
+    // fill: #000;
+  }
+}
+
+@media (max-width: 420px) {
+  .tabA1 {
+    padding-bottom: 13px;
+  }
+
+  .tabA2 {
+    font-size: 1.4rem;
+    padding: 24px;
   }
 }
