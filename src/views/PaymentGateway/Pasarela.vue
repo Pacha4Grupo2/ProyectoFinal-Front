@@ -42,7 +42,7 @@ export default {
 	},
 	computed: {
 		...mapState({
-			totalPrice: (state) => state.HomeStore.tatalPrice,
+			totalPrice: (state) => state.HomeStore.totalPrice,
 		}),
 	},
 };

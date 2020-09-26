@@ -5,7 +5,7 @@
 				<h4>Subtotal</h4>
 				<h4>S/. {{ totalPrice }}</h4>
 			</div>
-			<div class="dsct-container">
+			<div class="dsct-container d-flex">
 				<input
 					type="text"
 					placeholder="Agrega un código de descuento"
@@ -20,6 +20,7 @@
 					placeholder="Eliminar Cupon"
 					v-model="cupon"
 					v-if="cuponActive"
+					disabled
 				/>
 				<button v-if="!cuponActive" @click="getCupon(cupon)">
 					<img src="@/assets/images/enviar.png" />
