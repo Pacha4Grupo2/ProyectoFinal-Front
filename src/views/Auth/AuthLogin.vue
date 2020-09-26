@@ -4,10 +4,20 @@
 			description1="iniciar sesión"
 			description2="iniciar sesión"
 		/>
-		<form class="formAuth-login" action="#">
+		<form class="formAuth-login" @submit.prevent="handleSubmit">
 			<div>
-				<input type="email" placeholder="Correo electronico" required />
-				<input type="password" placeholder="Contraseña" required />
+				<input
+					v-model="username"
+					type="text"
+					placeholder="Correo electronico"
+					required
+				/>
+				<input
+					v-model="password"
+					type="password"
+					placeholder="Contraseña"
+					required
+				/>
 			</div>
 			<div class="enterA">
 				<button class="button btn-enterA">Ingresar</button>
@@ -19,10 +29,28 @@
 
 <script>
 import SocialMediaDiv from './components/SocialMediaDiv';
+import { mapActions } from 'vuex';
 export default {
 	name: 'AuthLogin',
 	components: {
 		SocialMediaDiv,
+	},
+	data() {
+		return {
+			username: '',
+			password: '',
+		};
+	},
+	methods: {
+		...mapActions({
+			login: 'AuthStore/postLogin',
+		}),
+		handleSubmit() {
+			this.login({
+				username: this.username,
+				password: this.password,
+			});
+		},
 	},
 };
 </script>

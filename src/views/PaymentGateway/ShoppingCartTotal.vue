@@ -30,9 +30,28 @@
 				</div>
 				<small style="padding: 13px;" class="deserror" v-if="errorLoaded">
 					el codigo ingrado es incorrecto
-				</small>				
-			</div>	
-			<button class="button">Continuar</button>
+				</small>
+				<input
+					type="text"
+					placeholder="Eliminar Cupon"
+					v-model="cupon"
+					v-if="cuponActive"
+					disabled
+				/>
+				<button v-if="!cuponActive" @click="getCupon(cupon)">
+					<img src="@/assets/images/enviar.png" />
+				</button>
+				<button v-if="cuponActive" @click="eliminarCupon">X</button>
+			</div>
+			<router-link v-if="!isLogin" to="/auth/login" class="button"
+				>Continuar</router-link
+			>
+			<router-link
+				v-if="isLogin"
+				to="/pago/pasarela/tarjeta-de-credito"
+				class="button"
+				>Continuar</router-link
+			>
 		</div>
 	</div>
 </template>
@@ -51,9 +70,9 @@ export default {
 			totalPrice: (state) => state.HomeStore.totalPrice,
 			cuponActive: (state) => state.HomeStore.cuponActive,
 			errorLoaded: (state) => state.HomeStore.errorLoaded,
+			isLogin: (state) => state.AuthStore.isLogin,
 		}),
 	},
-
 	methods: {
 		...mapActions({
 			getPriceTotal: 'HomeStore/getPriceTotal',
