@@ -80,23 +80,28 @@
   }
   .quotas{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
     grid-column-gap: 10px;        
     button {
       margin: 0 40px 10px 0;
       width: 100%;
       height: 100%;
-      padding: 13px 10px 13px 10px;     
+      padding: 13px 10px 13px;     
       border-radius: 10px;
       background-color: rgb(223, 219, 219);
       border: darkgrey;
       color: #000425;
       font-weight: bold;
-      outline: none;  
-      &:hover {
+      outline: none; 
+      cursor: pointer; 
+      .active {
         background-color: #5640ff;
         color: white;
-      }  
+      } 
+      &:hover{        
+          background-color: #5640ff;
+          color: white;        
+      } 
     }
   }
   .factura{
@@ -110,13 +115,14 @@
       border: darkgrey;
       outline: none; 
       padding: 13px;
-      padding-right: 30px;;      
+      padding-right: 30px;
+      cursor: pointer;              
       &:hover {
         background-color: #f81212;
         color: white;
       }
     }
-  }  
+  } 
   .button-container{
     display: grid;
     grid-template-columns: 1fr 1fr;

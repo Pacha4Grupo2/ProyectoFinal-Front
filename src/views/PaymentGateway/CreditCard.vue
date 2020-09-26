@@ -82,14 +82,14 @@
 		<section>
 			<h2>Número de cuotas</h2>
 			<div class="quotas">
-				<button class="active">01</button>
-				<button>02</button>
-				<button>03</button>
-				<button>04</button>
-				<button>05</button>
-				<button>06</button>
-				<button>12</button>
-				<button>24</button>
+				<button id="cuota1" >01</button>
+				<button id="cuota2">02</button>
+				<button id="cuota3">03</button>
+				<button id="cuota4">04</button>
+				<button id="cuota5">05</button>
+				<button id="cuota6">06</button>
+				<button id="cuota12">12</button>
+				<button id="cuota24">24</button>
 			</div><br><br>
 		</section>
 
