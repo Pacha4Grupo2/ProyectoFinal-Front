@@ -138,8 +138,7 @@
         }
     }
 }
-
-@media only screen and (max-width: 1108px) {
+@media only screen and (max-width: 1170px) {
     .view-shopping-cart-total {
         .section2-container {
             border: solid 1px rgb(86, 88, 86);
@@ -147,7 +146,7 @@
             .section2-price {
                 margin-bottom: 15px;
                 h4 {
-                    font-size: 2.6rem;
+                    font-size: 3rem;
                     margin-bottom: 20px;
                 }
             }
@@ -160,7 +159,50 @@
                     /* Box-model */
                     padding: 10px 10px;
                     border: none;
-                    width: 71%;
+                    width: 89%;
+                    /*Tipografía*/
+                    font-family: 'roboto';
+                    font-size: 1.2rem;
+                    font-weight: bold;
+
+                }
+                img {
+                    padding-top: 5px;
+                    width: 35px;
+                    object-fit: cover;
+                }
+            }
+            .button {
+                padding: 15px 0;
+                letter-spacing: 1.5px;
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1108px) {
+    .view-shopping-cart-total {
+        .section2-container {
+            border: solid 1px rgb(86, 88, 86);
+            padding: 47px 35px 55px 35px;
+            .section2-price {
+                margin-bottom: 15px;
+                h4 {
+                    font-size: 2.8rem;
+                    margin-bottom: 20px;
+                }
+            }
+            .dsct-container {
+                border: solid 2px grey;
+                padding: 10px 0;
+                margin-bottom: 40px;
+                border-radius: 8px;
+                input {
+                    /* Box-model */
+                    padding: 10px 10px;
+                    border: none;
+                    width: 89%;
                     /*Tipografía*/
                     font-family: 'roboto';
                     font-size: 1.2rem;
@@ -204,7 +246,7 @@
                     /* Box-model */
                     padding: 10px 10px;
                     border: none;
-                    width: 67%;
+                    width: 89%;
                     /*Tipografía*/
                     font-family: 'roboto';
                     font-size: 1.2rem;
@@ -234,7 +276,7 @@
             .section2-price {
                 margin-bottom: 15px;
                 h4 {
-                    font-size: 3rem;
+                    font-size: 2.5rem;
                     margin-bottom: 20px;
                 }
             }
@@ -247,15 +289,15 @@
                     /* Box-model */
                     padding: 10px 10px;
                     border: none;
-                    width: 91%;
+                    width: 89%;
                     /*Tipografía*/
                     font-family: 'roboto';
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     font-weight: bold;
                 }
                 img {
                     padding-top: 5px;
-                    width: 42px;
+                    width: 35px;
                     object-fit: cover;
                 }
             }

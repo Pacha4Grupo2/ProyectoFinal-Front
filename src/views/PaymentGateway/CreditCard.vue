@@ -82,7 +82,7 @@
 		<section>
 			<h2>Número de cuotas</h2>
 			<div class="quotas">
-				<button id="cuota1" >01</button>
+				<button id="cuota1" class="active">01</button>
 				<button id="cuota2">02</button>
 				<button id="cuota3">03</button>
 				<button id="cuota4">04</button>
@@ -109,6 +109,11 @@
 <script>
 export default {
 	name: 'CreditCard',
+/* 	data() {
+		return {
+			isActive: true,
+		}
+	}	 */	
 };
 </script>
 
