@@ -1,0 +1,66 @@
+.view-cash-payment {
+	section{
+		margin-bottom: 20px;
+		.img-main {
+			max-width: 40%;
+			object-fit: cover;
+			border-radius: 7px;
+		}
+		h2 {
+		/* Box-model */
+		margin-bottom: 15px;
+		margin-right: 20px;
+		/*Tipografía*/
+		font-family: 'Poppins';
+		color: #222222;
+		font-size: 2.1rem;
+		font-weight: bold;
+		}
+		p {
+			font-family: 'roboto';
+			color: #222222;
+			font-size: 1.55rem;
+			margin-bottom: 15px;
+			font-weight: bold;
+		}
+		.img-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+			grid-column-gap: 10px;
+			grid-row-gap: 10px;
+			img {
+				width: 60%;
+				object-fit: cover;
+				border-radius: 7px;
+			}
+		}
+	}
+	.button-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 10px;
+		button {
+			width: 95%;
+			padding: 15px 0;
+		}	
+	}
+  .factura{
+    button{
+      width: 5%;
+      margin-right:8px;
+      color: #000425;
+      font-weight: bold;
+      border-radius: 10px;
+      background-color: rgb(223, 219, 219);
+      border: darkgrey;
+      outline: none; 
+      padding: 13px;
+			padding-right: 30px;  
+			cursor: pointer;			   
+      &:hover {
+        background-color: #f81212;
+        color: white;
+      }
+    }
+  }  
+}

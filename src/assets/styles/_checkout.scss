@@ -1,0 +1,153 @@
+.view-checkout {
+	.checkout {
+		.sectionprice-checkout {
+            padding: 55px 80px;
+            border: solid 1px grey;
+			h2 {
+				/*Tipografía*/
+				font-family: 'Poppins';
+				color: #000425;
+				font-size: 2.8rem;
+                margin-bottom: 25px;
+                font-weight: bold;
+			}
+			h4{
+				margin-bottom: 25px;
+                font-size: 2.5rem;                
+			}
+			.button {
+				/*Box-model*/
+				padding: 15px 10px;
+				margin-right: 5px;
+				border: #5640ff;
+				font-weight: bold;
+                width: 100%;
+                font-size: 2.2rem;
+		    }
+		}
+	}
+}
+@media only screen and (max-width: 1210px) {
+    .view-checkout {
+        .checkout {
+            .sectionprice-checkout {
+                padding: 55px 55px;
+                border: solid 1px grey;
+                h2 {
+                    /*Tipografía*/
+                    font-family: 'Poppins';
+                    color: #000425;
+                    font-size: 2.8rem;
+                    margin-bottom: 25px;
+                    font-weight: bold;
+                }
+                h4{
+                    margin-bottom: 25px;
+                    font-size: 2.1rem;                
+                }
+                .button {
+                    /*Box-model*/
+                    padding: 15px 10px;
+                    margin-right: 5px;
+                    border: #5640ff;
+                    font-weight: bold;
+                    width: 100%;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1156px) {
+    .view-checkout {
+        .checkout {
+            .sectionprice-checkout {
+                padding: 55px 50px;
+                border: solid 1px grey;
+                h2 {
+                    /*Tipografía*/
+                    font-family: 'Poppins';
+                    color: #000425;
+                    font-size: 2.6rem;
+                    margin-bottom: 25px;
+                    font-weight: bold;
+                }
+                h4{
+                    margin-bottom: 25px;
+                    font-size: 1.9rem;                
+                }
+                .button {
+                    /*Box-model*/
+                    padding: 15px 10px;
+                    margin-right: 5px;
+                    border: #5640ff;
+                    font-weight: bold;
+                    width: 100%;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .view-checkout {
+        .checkout {
+            .sectionprice-checkout {
+                padding: 55px 50px;
+                border: solid 1px grey;
+                h2 {
+                    /*Tipografía*/
+                    font-family: 'Poppins';
+                    color: #000425;
+                    font-size: 2.2rem;
+                    margin-bottom: 25px;
+                    font-weight: bold;
+                }
+                h4{
+                    margin-bottom: 25px;
+                    font-size: 1.6rem;                
+                }
+                .button {
+                    /*Box-model*/
+                    padding: 15px 10px;
+                    margin-right: 5px;
+                    border: #5640ff;
+                    font-weight: bold;
+                    width: 100%;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 323px) {
+    .view-checkout {
+        .checkout {
+            .sectionprice-checkout {
+                padding: 55px 50px;
+                border: solid 1px grey;
+                h2 {
+                    /*Tipografía*/
+                    font-family: 'Poppins';
+                    color: #000425;
+                    font-size: 2rem;
+                    margin-bottom: 25px;
+                    font-weight: bold;
+                }
+                h4{
+                    margin-bottom: 25px;
+                    font-size: 1.4rem;                
+                }
+                .button {
+                    /*Box-model*/
+                    padding: 15px 10px;
+                    margin-right: 5px;
+                    border: #5640ff;
+                    font-weight: bold;
+                    width: 100%;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}

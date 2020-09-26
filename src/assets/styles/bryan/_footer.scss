@@ -1,0 +1,25 @@
+.container-footer {
+    background-color: #000425;
+    padding: 20px 20px;
+    height: 60px;
+    &__img {
+        color: white;
+        width: 73.2%;
+        margin: 0 auto;
+        svg {
+            fill: #ffffff;
+            margin-right: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 381px) {
+    .container-footer {
+        &__img {
+            width: 100%;
+            svg {
+                width: 20%;
+            }
+        }
+    }
+}

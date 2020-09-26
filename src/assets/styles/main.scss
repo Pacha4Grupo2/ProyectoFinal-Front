@@ -2,14 +2,27 @@
 @import 'reset';
 @import 'variables';
 @import 'globals';
+@import 'bryan/header';
+@import 'mery/header';
+@import 'menu';
+@import 'bryan/landingpage';
+@import 'bryan/cardCourse';
+@import 'bryan/comunity';
+@import 'bryan/beneficios';
+@import 'bryan/footer';
 @import 'button';
 @import 'input';
 @import 'phone';
 @import 'menu';
-@import "andre/authLayout";
-@import "andre/authLogin";
-@import "andre/authRegister";
-@import "andre/SocialMediaDiv";
-
-
-
+@import 'andre/authLayout';
+@import 'andre/authLogin';
+@import 'andre/authRegister';
+@import 'andre/SocialMediaDiv';
+@import 'shoppingCartMain';
+@import 'shoppingCartDetail';
+@import 'pasarela';
+@import 'creditCard';
+@import 'debitCard';
+@import 'cashPayment';
+@import 'checkout';
+@import 'paymentSummary';
