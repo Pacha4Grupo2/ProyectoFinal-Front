@@ -1,4 +1,5 @@
 import store from "../../../store/";
+import router from "../../../router";
 export default {
   namespaced: true,
   state: {
@@ -18,6 +19,7 @@ export default {
     modal: false,
     backColor: false,
     totalProducts: [],
+    ListPurchases: [],
     totalPrice: 0,
     cuponActive: false,
     cupon: {},
@@ -161,9 +163,40 @@ export default {
         commit("SET_ERROR_LOADED", true);
       }
     },
-
     eliminarCupon({ commit }) {
       commit("ELIMINARCUPON", false);
+    },
+    // async paymentCulqui({ commit }, formData) {
+    //   fetch("https://925c87f44515.ngrok.io/charges/", {
+    //     method: "POST",
+    //     body: JSON.stringify(formData),
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //       Authorization:
+    //         "Bearer " +
+    //         "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAxMDI2MDMxLCJqdGkiOiJlMzNhZDA0OWM3Mjg0MWJhOWUwNWI1YjQyNDYyODgyYyIsInVzZXJfaWQiOjF9.QP7_8wdoAhLd6J08ydvO43U7tMrvpj5weQAnnYVP9JY",
+    //     },
+    //   });
+    // },
+    /* eslint-disable */
+    async paymentCulqui({ commit }, formData) {
+      var myHeaders = new Headers();
+      myHeaders.append(
+        "Authorization",
+        "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAxMDI2MDMxLCJqdGkiOiJlMzNhZDA0OWM3Mjg0MWJhOWUwNWI1YjQyNDYyODgyYyIsInVzZXJfaWQiOjF9.QP7_8wdoAhLd6J08ydvO43U7tMrvpj5weQAnnYVP9JY"
+      );
+      var requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: formData,
+        redirect: "follow",
+      };
+      fetch("https://925c87f44515.ngrok.io/charges/", requestOptions)
+        .then((response) => response.text())
+        .then((result) => {
+          router.push("/pago/resumen");
+        })
+        .catch((error) => alert("No se pudo realizar la compra"));
     },
   },
   modules: {},
