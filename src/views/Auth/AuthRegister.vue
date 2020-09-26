@@ -1,6 +1,6 @@
 <template>
   <div class="formRegister-content">
-    <SocialMediaDiv description1="registrarte" description2="registrarte" />
+    <SocialMediaDiv description1="registrarte" description2="registrarte con tu correo" />
     <form class="formAuth-register" @submit.prevent="handleRegister">
       <div>
         <input v-model="nombre" type="text" placeholder="Nombre y Apellidos" required />
@@ -9,7 +9,7 @@
         <input v-model="verifyPassword" type="password" placeholder="Repite contraseña" required />
         <div class="checkboxA-container">
           <input class="checkboxA" type="checkbox" name="accept" required />
-          <label>Acepto Términos y condiciones</label>
+          <label class="authRegister-terms">Acepto <u>Términos y condiciones</u></label>
         </div>
       </div>
       <button class="button btn-registerA">Registrarse</button>
@@ -45,7 +45,6 @@ export default {
     }
 
       this.postRegister({
-        username: "arthur", // ARREGLAR ESTO!!
         nombre: this.nombre,
         email: this.email,
         password: this.password

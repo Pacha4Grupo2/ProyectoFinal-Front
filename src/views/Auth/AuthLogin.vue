@@ -1,9 +1,9 @@
 <template>
   <div class="formLogin-content">
-    <SocialMediaDiv description1="iniciar sesión" description2="iniciar sesión" />
+    <SocialMediaDiv description1="iniciar sesión" description2="iniciar sesión con tu usuario" />
     <form class="formAuth-login" @submit.prevent="handleSubmit">
       <div>
-        <input v-model="username" type="text" placeholder="Correo electronico" required />
+        <input v-model="username" type="text" placeholder="Nombre de Usuario" required />
         <input v-model="password" type="password" placeholder="Contraseña" required />
       </div>
       <div class="enterA">
