@@ -65,8 +65,8 @@
 
 		<section class="factura d-flex">
 			<h2>Solicitar factura</h2>
-			<button>Sí</button>
-			<button>No</button>			
+			<button>No</button>
+			<button>Sí</button>			
 		</section>
 
 		<section class="button-container">
