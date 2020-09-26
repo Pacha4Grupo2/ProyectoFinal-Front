@@ -27,7 +27,15 @@
 				</button>
 				<button v-if="cuponActive" @click="eliminarCupon">X</button>
 			</div>
-			<button class="button">Continuar</button>
+			<router-link v-if="!isLogin" to="/auth/login" class="button"
+				>Continuar</router-link
+			>
+			<router-link
+				v-if="isLogin"
+				to="/pago/pasarela/tarjeta-de-credito"
+				class="button"
+				>Continuar</router-link
+			>
 		</div>
 	</div>
 </template>
@@ -46,6 +54,7 @@ export default {
 			totalPrice: (state) => state.HomeStore.totalPrice,
 			cuponActive: (state) => state.HomeStore.cuponActive,
 			errorLoaded: (state) => state.HomeStore.errorLoaded,
+			isLogin: (state) => state.AuthStore.isLogin,
 		}),
 	},
 
