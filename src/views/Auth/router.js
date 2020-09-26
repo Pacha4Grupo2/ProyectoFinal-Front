@@ -13,5 +13,10 @@ export default {
       name: "auth-register",
       component: () => import("./AuthRegister.vue"),
     },
+    {
+      path: "registered",
+      name: "auth-registered",
+      component: ()=> import("./AuthUserData.vue"),
+    }
   ],
 };

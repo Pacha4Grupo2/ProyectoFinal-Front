@@ -34,17 +34,18 @@
 			</li>
 		</ul> -->
 
-		<Phone/>		
+	<router-view></router-view>
 	</div>
+  <!-- <div class="app">
+    
+  </div> -->
 </template>
 <script>
-import Phone from "@/components/Phone";
-
 export default {
 	name: 'App',
-	components: { Phone}
+	components: { }
 };
 </script>
 <style lang="scss">
-@import '@/assets/styles/main.scss';
+@import "@/assets/styles/main.scss";
 </style>
