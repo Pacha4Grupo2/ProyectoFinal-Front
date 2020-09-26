@@ -5,32 +5,15 @@
 				<h4>Subtotal</h4>
 				<h4>S/. {{ totalPrice }}</h4>
 			</div>
-			<div class="dsct-container">
-				<div class="dsct-container1 d-flex">
-					<input
-						type="text"
-						placeholder="Agrega un código de descuento"
-						v-model="cupon"
-						v-if="!cuponActive"
-					/>
-						<!--<small class="deserror" v-if="errorLoaded">
-							el codigo ingrado es incorrecto
-						</small> -->
-					<input
-						type="text"
-						placeholder="Eliminar Cupon"
-						v-model="cupon"
-						v-if="cuponActive"
-						disabled
-					/>
-					<button v-if="!cuponActive" @click="getCupon(cupon)">
-						<img src="@/assets/images/enviar.png" />
-					</button>
-					<button v-if="cuponActive" @click="eliminarCupon">X</button>
-				</div>
-				<small style="padding: 13px;" class="deserror" v-if="errorLoaded">
+			<div class="dsct-container d-flex">
+				<input
+					type="text"
+					placeholder="Agrega un código de descuento"
+					v-model="cupon"
+					v-if="!cuponActive"
+				/>
+				<small class="deserror" v-if="errorLoaded">
 					el codigo ingrado es incorrecto
-<<<<<<< HEAD
 				</small>
 				<input
 					type="text"
@@ -53,11 +36,6 @@
 				class="button"
 				>Continuar</router-link
 			>
-=======
-				</small>				
-			</div>	
-			<button class="button">Continuar</button>
->>>>>>> 171031d93db79e6488673fa8040be3e7de426efd
 		</div>
 	</div>
 </template>
@@ -79,7 +57,6 @@ export default {
 			isLogin: (state) => state.AuthStore.isLogin,
 		}),
 	},
-
 	methods: {
 		...mapActions({
 			getPriceTotal: 'HomeStore/getPriceTotal',
